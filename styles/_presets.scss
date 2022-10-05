@@ -1,0 +1,16 @@
+$heightBoxes: 100vh;
+$widthBoxes: 100%;
+$leftWidth: 20vh;
+$lightFont: aliceblue;
+$darkFont: #978b90;
+// Preset Combos
+@mixin flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin HeightWidthBoxes {
+    height: $heightBoxes;
+    width: $widthBoxes;
+}

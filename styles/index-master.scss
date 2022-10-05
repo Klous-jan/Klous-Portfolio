@@ -1,0 +1,25 @@
+@import "./presets";
+// general
+// * {
+//     outline: 1px solid red;
+// }
+body {
+    height: 100%;
+    overflow-x: hidden;
+    background-color: #161819;
+    margin: 0;
+}
+
+// styleing
+@import "./leftBox";
+p {
+    margin-top: 0;
+}
+
+#landingBox,
+#portfolioBox,
+#aboutBox,
+#contactBox {
+    @include HeightWidthBoxes();
+    margin-left: 10vh;
+}

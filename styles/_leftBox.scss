@@ -1,0 +1,91 @@
+@import "./presets";
+#leftBox {
+    height: 100vh;
+    width: $leftWidth;
+    left: 0;
+    display: inline-flex;
+    position: fixed;
+    background-color: #121414;
+    margin-right: 0;
+    #linksWrapper {
+        #links {
+            height: 25vh;
+            width: $leftWidth;
+            background-color: black;
+            padding-top: 2vh;
+            #logo {
+                aspect-ratio: 1/1.25;
+                width: 10vh;
+                margin-left: 4.85vh;
+                background-image: url(/images/logo.svg);
+                background-repeat: no-repeat;
+                // https://codepen.io/sosuke/pen/Pjoqqp
+                // Hex color to filter converter
+                // filter is set to "aliceblue"
+                filter: invert(99%) sepia(12%) saturate(245%) hue-rotate(309deg) brightness(96%) contrast(89%);
+                @include flexCenter();
+                z-index: 1;
+            }
+            #logoShadow {
+                aspect-ratio: 1/1.25;
+                width: 10vh;
+                margin-left: 5.15vh;
+                margin-top: -12.75vh;
+                background-image: url(/images/logo.svg);
+                background-repeat: no-repeat;
+                // https://codepen.io/sosuke/pen/Pjoqqp
+                // Hex color to filter converter
+                // filter is set to "aliceblue"
+                filter: invert(33%) sepia(65%) saturate(7500%) hue-rotate(334deg) brightness(101%) contrast(98%);
+                @include flexCenter();
+                z-index: 1;
+            }
+            h6 {
+                @include flexCenter();
+                margin-top: 5%;
+                margin-bottom: 5%;
+                font-size: 20px;
+                color: $lightFont;
+            }
+            h5 {
+                @include flexCenter();
+                margin-top: 0;
+                margin-bottom: 0;
+                color: $lightFont;
+            }
+            .title {
+                // outline: 2px solid blue;
+                @include flexCenter();
+                .titleWrapper {
+                    // outline: 1px solid white;
+                    height: 20px;
+                    overflow: hidden;
+                    .titleItem {
+                        line-height: 1vh;
+                        @include flexCenter;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.slider {
+    color: $darkFont;
+    font-size: 20px;
+    text-align: center;
+    animation: slider 30s linear infinite;
+}
+
+@keyframes slider{
+    0%{ margin-top: -19px }
+    10%{ margin-top: -19px }
+    16%{ margin-top: -42px }
+    35%{ margin-top: -42px }
+    41%{ margin-top: -65px }
+    60%{ margin-top: -65px }
+    66%{ margin-top: -88px }
+    85%{ margin-top: -88px }
+    91%{ margin-top: -111px }
+    100%{ margin-top: -111px }
+}
