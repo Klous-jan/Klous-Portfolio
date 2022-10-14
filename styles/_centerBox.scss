@@ -1,0 +1,29 @@
+@import "./presets";
+#centerBox {
+    height: 100vh;
+    width: 40%;
+    left: $leftWidth;
+    display: inline-flex;
+    position: fixed;
+    @include flexCenter;
+    background-color: #161819;
+    // @include flexCenter;
+    .nameArea {
+        padding-left: 50px;
+        margin: 0;
+        margin-bottom: 20px;
+        color: rgb(189, 211, 175);
+        @include Font-Major
+    }
+    .aboutArea {
+        padding-left: 80px;
+        color: aliceblue;
+        @include Font-Minor;
+    }
+    .aboutAreaContact {
+        padding-left: 80px;
+        color: rgb(189, 211, 175);
+        @include Font-Minor;
+        text-decoration: none;
+    }
+}

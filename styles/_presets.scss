@@ -1,8 +1,11 @@
 $heightBoxes: 100vh;
 $widthBoxes: 100%;
-$leftWidth: 20vh;
+$leftWidth: 150px;
 $lightFont: aliceblue;
 $darkFont: #978b90;
+$SecBorder: 1px solid grey;
+$trans: .4s;
+
 // Preset Combos
 @mixin flexCenter {
     display: flex;
@@ -13,4 +16,61 @@ $darkFont: #978b90;
 @mixin HeightWidthBoxes {
     height: $heightBoxes;
     width: $widthBoxes;
+}
+
+@mixin Font-Major {
+    font-size: 65px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+@mixin Style-Major {
+    transition: $trans;
+    color: grey;
+    text-decoration: none;
+}
+
+@mixin Font-Mid {
+    font-size: 40px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+@mixin Style-Mid {
+    transition: $trans;
+    color: grey;
+    text-decoration: none;
+}
+
+@mixin Font-Minor {
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+}
+
+@mixin Style-Minor {
+    transition: $trans;
+    color: rgb(128, 128, 128);
+    text-decoration: none;
+}
+
+@mixin Font-Tiny {
+    font-size: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+}
+
+@mixin Style-Tiny {
+    transition: $trans;
+    color: grey;
+    text-decoration: none;
+}
+
+@mixin leftFontMargin {
+    text-decoration: none;
+}
+
+@mixin leftNavStyle {
+    border-bottom: $SecBorder;
+    height: 60px;
 }

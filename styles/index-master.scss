@@ -12,14 +12,8 @@ body {
 
 // styleing
 @import "./leftBox";
+@import "./centerBox";
+@import "./rightBox";
 p {
     margin-top: 0;
-}
-
-#landingBox,
-#portfolioBox,
-#aboutBox,
-#contactBox {
-    @include HeightWidthBoxes();
-    margin-left: 10vh;
 }

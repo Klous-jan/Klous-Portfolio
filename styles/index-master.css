@@ -6,61 +6,44 @@ body {
 }
 
 #leftBox {
+  flex-direction: column;
+  display: flex;
   height: 100vh;
-  width: 20vh;
-  left: 0;
-  display: inline-flex;
+  width: 150px;
+  display: inline-block;
   position: fixed;
   background-color: #121414;
   margin-right: 0;
 }
+#leftBox #linksWrapper {
+  height: 84%;
+  width: 150px;
+  outline: 1px solid red;
+}
 #leftBox #linksWrapper #links {
-  height: 25vh;
-  width: 20vh;
+  height: 150px;
+  width: 150px;
   background-color: black;
   padding-top: 2vh;
 }
 #leftBox #linksWrapper #links #logo {
-  aspect-ratio: 1/1.25;
-  width: 10vh;
-  margin-left: 4.85vh;
-  background-image: url(/images/logo.svg);
+  padding-bottom: 10px;
+  height: 40px;
+  width: 120px;
+  background-image: url(/images/KMLogo.svg);
   background-repeat: no-repeat;
-  filter: invert(99%) sepia(12%) saturate(245%) hue-rotate(309deg) brightness(96%) contrast(89%);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 1;
-}
-#leftBox #linksWrapper #links #logoShadow {
-  aspect-ratio: 1/1.25;
-  width: 10vh;
-  margin-left: 5.15vh;
-  margin-top: -12.75vh;
-  background-image: url(/images/logo.svg);
-  background-repeat: no-repeat;
-  filter: invert(33%) sepia(65%) saturate(7500%) hue-rotate(334deg) brightness(101%) contrast(98%);
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  margin: auto;
   z-index: 1;
 }
 #leftBox #linksWrapper #links h6 {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 5%;
-  margin-bottom: 5%;
+  margin-top: 10px;
+  margin-bottom: 10px;
   font-size: 20px;
   color: aliceblue;
-}
-#leftBox #linksWrapper #links h5 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 0;
-  margin-bottom: 0;
-  color: aliceblue;
+  padding-bottom: 10px;
 }
 #leftBox #linksWrapper #links .title {
   display: flex;
@@ -72,18 +55,176 @@ body {
   overflow: hidden;
 }
 #leftBox #linksWrapper #links .title .titleWrapper .titleItem {
-  line-height: 1vh;
+  line-height: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+#leftBox .navSection {
+  flex-direction: column;
+  display: flex;
+  position: fixed;
+  top: 35%;
+  width: 150px;
+}
+#leftBox .navSection .aboutMe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  transition: 0.4s;
+  color: rgb(128, 128, 128);
+  text-decoration: none;
+  text-decoration: none;
+  border-bottom: 1px solid grey;
+  height: 60px;
+  border-top: 1px solid grey;
+}
+#leftBox .navSection .skills {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  transition: 0.4s;
+  color: rgb(128, 128, 128);
+  text-decoration: none;
+  border-bottom: 1px solid grey;
+  height: 60px;
+}
+#leftBox .navSection .myWork {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  transition: 0.4s;
+  color: rgb(128, 128, 128);
+  text-decoration: none;
+  border-bottom: 1px solid grey;
+  height: 60px;
+}
+#leftBox .navSection .contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  transition: 0.4s;
+  color: rgb(128, 128, 128);
+  text-decoration: none;
+  border-bottom: 1px solid grey;
+  height: 60px;
+}
+#leftBox .navSection .inspiration {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  transition: 0.4s;
+  color: rgb(128, 128, 128);
+  text-decoration: none;
+  border-bottom: 1px solid grey;
+  height: 60px;
+}
+#leftBox .navSection .playground {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  transition: 0.4s;
+  color: rgb(128, 128, 128);
+  text-decoration: none;
+  border-bottom: 1px solid grey;
+  height: 60px;
+}
+#leftBox .navSection .aboutMe:hover {
+  color: rgb(241, 224, 176);
+  transition: 0.4s;
+}
+#leftBox .navSection .skills:hover {
+  color: rgb(241, 224, 176);
+  transition: 0.4s;
+}
+#leftBox .navSection .myWork:hover {
+  color: rgb(241, 224, 176);
+  transition: 0.4s;
+}
+#leftBox .navSection .contact:hover {
+  color: rgb(241, 224, 176);
+  transition: 0.4s;
+}
+#leftBox .navSection .inspiration:hover {
+  color: rgb(241, 224, 176);
+  transition: 0.4s;
+}
+#leftBox .navSection .playground:hover {
+  color: rgb(241, 224, 176);
+  transition: 0.4s;
+}
+#leftBox .navSection .ul-box {
+  flex-direction: column;
+  display: flex;
+  outline: 1px solid blue;
+  width: 150px;
+  margin-top: 145px;
+  bottom: 100px;
+  margin-bottom: 10vw;
+}
+#leftBox .navSection .ul-box .socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 0px;
+  padding-left: 0px;
+  list-style: none;
+}
+#leftBox .navSection .ul-box .socials .linkedin {
+  padding-right: 10px;
+  padding-left: 10px;
+}
+#leftBox .navSection .ul-box .socials .linkedin .linkedinSVG {
+  width: 1.5rem;
+  fill: #808080;
+  transition: 0.4s;
+}
+#leftBox .navSection .ul-box .socials .linkedin .linkedinSVG:hover {
+  fill: rgb(241, 224, 176);
+  transition: 0.4s;
+}
+#leftBox .navSection .ul-box .socials .github {
+  padding-right: 10px;
+  padding-left: 10px;
+}
+#leftBox .navSection .ul-box .socials .github .githubSVG {
+  width: 1.5rem;
+  fill: #808080;
+  transition: 0.4s;
+}
+#leftBox .navSection .ul-box .socials .github .githubSVG:hover {
+  fill: rgb(241, 224, 176);
+  transition: 0.4s;
+}
+
+.current-page {
+  color: rgb(241, 224, 176) !important;
 }
 
 .slider {
   color: #978b90;
   font-size: 20px;
   text-align: center;
-  -webkit-animation: slider 30s linear infinite;
-          animation: slider 30s linear infinite;
+  -webkit-animation: slider 10s linear infinite;
+          animation: slider 10s linear infinite;
 }
 
 @-webkit-keyframes slider {
@@ -151,15 +292,42 @@ body {
     margin-top: -111px;
   }
 }
-p {
-  margin-top: 0;
+#centerBox {
+  height: 100vh;
+  width: 40%;
+  left: 150px;
+  display: inline-flex;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #161819;
+}
+#centerBox .nameArea {
+  padding-left: 50px;
+  margin: 0;
+  margin-bottom: 20px;
+  color: rgb(189, 211, 175);
+  font-size: 65px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+#centerBox .aboutArea {
+  padding-left: 80px;
+  color: aliceblue;
+  font-size: 15px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+}
+#centerBox .aboutAreaContact {
+  padding-left: 80px;
+  color: rgb(189, 211, 175);
+  font-size: 15px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  text-decoration: none;
 }
 
-#landingBox,
-#portfolioBox,
-#aboutBox,
-#contactBox {
-  height: 100vh;
-  width: 100%;
-  margin-left: 10vh;
+p {
+  margin-top: 0;
 }/*# sourceMappingURL=index-master.css.map */
