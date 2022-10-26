@@ -987,7 +987,7 @@ template {
 	-webkit-animation-name: ajs-flipInY;
 	animation-name: ajs-flipInY;
 }
-/* .alertify.ajs-flipy.ajs-out.ajs-hidden .ajs-dialog {
+.alertify.ajs-flipy.ajs-out.ajs-hidden .ajs-dialog {
 	-webkit-animation-name: ajs-flipOutY;
 	animation-name: ajs-flipOutY;
 }
@@ -2005,7 +2005,7 @@ Copyright (c) 2015 Daniel Eden
 		transform: none;
 	}
 }
-*/ .wobble {
+.wobble {
 	-webkit-animation-name: wobble;
 	animation-name: wobble;
 }

@@ -1,0 +1,137 @@
+html {
+	font-size: 62.5%;
+	min-width: 320px;
+}
+body {
+	/* font-size: 1.6rem;
+	line-height: 1.5; */
+	background: #1d1d1d;
+	/* display: block;
+	min-width: 320px;
+	font-family: "Open Sans", sans-serif;
+	color: #fff;
+	padding-left: 13rem;
+	overflow-y: scroll;
+	overflow-x: hidden; */
+}
+
+$color: Pink;
+$corner-bevel: 100;
+
+.leftBox {
+	width: 26rem;
+	background-color: #181818;
+	height: 100vh;
+	position: fixed;
+	left: 0;
+	top: 0;
+	right: auto;
+	bottom: 0;
+	/* display: -webkit-box;
+	display: -ms-flexbox; */
+	display: flex;
+	z-index: 3;
+	/* -webkit-box-orient: vertical; */
+	/* -webkit-box-direction: normal; */
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	margin: 0;
+	padding: 0;
+}
+
+.slider {
+	color: $darkFont;
+	font-size: 20px;
+	text-align: center;
+	animation: slider 10s linear infinite;
+}
+
+@keyframes slider {
+	0% {
+		margin-top: -19px;
+	}
+	10% {
+		margin-top: -19px;
+	}
+	16% {
+		margin-top: -42px;
+	}
+	35% {
+		margin-top: -42px;
+	}
+	41% {
+		margin-top: -65px;
+	}
+	60% {
+		margin-top: -65px;
+	}
+	66% {
+		margin-top: -88px;
+	}
+
+	85% {
+		margin-top: -88px;
+	}
+	91% {
+		margin-top: -111px;
+	}
+	100% {
+		margin-top: -111px;
+	}
+}
+
+.logo {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+.logo div {
+	width: 6rem;
+	height: auto;
+	padding-bottom: 10px;
+	height: 40px;
+	width: 120px;
+	background-image: url(/images/KMLogo.svg);
+	background-repeat: no-repeat;
+	margin: auto;
+	z-index: 1;
+}
+
+.logo span {
+	font-family: font-file-82132;
+	color: #fff;
+	margin-top: 1px;
+	font-size: 2.7rem;
+}
+
+.title {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	.titleWrapper {
+		height: 20px;
+		overflow: hidden;
+		.titleItem {
+			line-height: 10px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+	}
+}

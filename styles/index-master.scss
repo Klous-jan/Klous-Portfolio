@@ -3,11 +3,14 @@
 // * {
 //     outline: 1px solid red;
 // }
+html {
+	overflow-y: hidden; /* Hide vertical scrollbar */
+	overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+
 body {
-    height: 100%;
-    overflow-x: hidden;
-    background-color: #161819;
-    margin: 0;
+	background-color: #1d1d1d;
+	margin: 0;
 }
 
 // styleing
@@ -15,5 +18,5 @@ body {
 @import "./centerBox";
 @import "./rightBox";
 p {
-    margin-top: 0;
+	margin-top: 0;
 }
