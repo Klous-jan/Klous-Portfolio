@@ -4,7 +4,8 @@ $leftWidth: 17rem;
 $totalWidth: calc(100% - $leftWidth);
 $centerWidth: calc($totalWidth / 2);
 $rightWidth: calc($totalWidth / 2);
-
+$myWorkHeight: 100vh;
+$myWorkWidth: calc(100% - $leftWidth);
 $lightFont: aliceblue;
 $darkFont: #978b90;
 $SecBorder: 1px solid grey;

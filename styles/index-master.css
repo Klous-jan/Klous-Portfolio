@@ -18,7 +18,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: 1d1d1d;
 }
 #centerBox .nameArea {
   padding-left: 50px;
@@ -82,6 +81,7 @@ body {
 }
 .leftBox .linksWrapper {
   background: #000000;
+  height: 180px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -313,7 +313,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: 1d1d1d;
 }
 #centerBox .nameArea {
   padding-left: 50px;
@@ -340,6 +339,157 @@ body {
   text-decoration: none;
 }
 
+.ul-image {
+  display: flex;
+  list-style: none;
+}
+.ul-image li {
+  position: relative;
+  margin: 0 3em;
+}
+.ul-image li .image,
+.ul-image li .shadow {
+  transform: rotateX(45deg) rotateZ(-25deg);
+  transform-style: preserve-3d;
+  transition: 0.3s;
+}
+.ul-image li .image {
+  position: relative;
+}
+.ul-image li .image img {
+  vertical-align: bottom;
+  filter: grayscale(75%);
+  transition: 0.2s;
+  height: 100px;
+  z-index: 10;
+}
+.ul-image li .image::before,
+.ul-image li .image::after {
+  content: "";
+  position: absolute;
+}
+.ul-image li .image::before {
+  bottom: -8px;
+  left: 0;
+  background-color: aliceblue;
+  width: 100%;
+  height: 15px;
+  transform: rotateX(90deg) translateY(-7px);
+}
+.ul-image li .image::after {
+  top: 0;
+  left: -8px;
+  width: 15px;
+  height: 100.5%;
+  background-color: aliceblue;
+  transform: rotateY(90deg) translateX(7px);
+}
+.ul-image li .shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  box-shadow: -20px 50px 20px rgba(0, 0, 0, 0.2);
+}
+.ul-image li:hover .image,
+.ul-image li:hover .shadow {
+  transform: rotatex(0);
+  box-shadow: -20px 50px 20px rgba(0, 0, 0, 0.2);
+}
+
+.bg {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -30;
+  opacity: 0.1;
+}
+.bg:after {
+  content: "";
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  min-height: 100%;
+  max-height: 100%;
+  width: 700%;
+  background-image: url(/images/BG-Lines.svg);
+  background-position: center bottom;
+  -webkit-animation: animatedLines 1500s linear infinite;
+          animation: animatedLines 1500s linear infinite;
+  opacity: 0.3;
+  position: absolute;
+  z-index: -3;
+}
+.bg:before {
+  content: "";
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  min-height: 100%;
+  max-height: 100%;
+  width: 700%;
+  background-image: url(/images/BG-Squares.svg);
+  background-position: center bottom;
+  -webkit-animation: animatedSquares 1200s linear infinite;
+          animation: animatedSquares 1200s linear infinite;
+  opacity: 0.2;
+  position: absolute;
+  z-index: -3;
+}
+
+@-webkit-keyframes animatedSquares {
+  0% {
+    background-position: 0 100%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0% 100%;
+  }
+}
+
+@keyframes animatedSquares {
+  0% {
+    background-position: 0 100%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0% 100%;
+  }
+}
+@-webkit-keyframes animatedLines {
+  0% {
+    background-position: 100% 100%;
+  }
+  50% {
+    background-position: 0% 100%;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
+}
+@keyframes animatedLines {
+  0% {
+    background-position: 100% 100%;
+  }
+  50% {
+    background-position: 0% 100%;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
+}
 #rightBox {
   height: 100vh;
   width: calc((100% - 17rem) / 2);
@@ -350,7 +500,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: 1d1d1d;
 }
 #rightBox .nameArea {
   padding-left: 50px;
@@ -375,105 +524,6 @@ body {
   font-family: "Montserrat", sans-serif;
   font-weight: 300;
   text-decoration: none;
-}
-
-HTML CSSResult Skip Results Iframe EDIT ON .title {
-  text-align: center;
-  color: #333;
-  font: 24px Helvetica, Arial, serif;
-}
-
-.three-d-container {
-  margin: 30px auto;
-  width: 300px;
-  height: 300px;
-  border-radius: 3px;
-  position: relative;
-  -ms-perspective: 1000px;
-  -o-perspective: 1000px;
-  perspective: 1000px;
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2), 0 0 40px rgba(0, 0, 0, 0.2) inset;
-}
-
-.three-d-cube {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  transition: transform 1s;
-  transform-style: preserve-3d;
-  transform: translateZ(-150px);
-}
-
-.three-d-cube .three-d-item {
-  width: 100%;
-  height: 100%;
-  display: block;
-  margin: 0;
-  position: absolute;
-}
-
-.three-d-cube .three-d-item img {
-  width: 100%;
-  height: 100%;
-  display: block;
-  margin: 0;
-}
-
-.three-d-item:nth-child(1) {
-  transform: rotateY(0deg) translateZ(150px);
-}
-
-.three-d-item:nth-child(2) {
-  transform: rotateX(180deg) translateZ(150px);
-}
-
-.three-d-item:nth-child(3) {
-  transform: rotateY(90deg) translateZ(150px);
-}
-
-.three-d-item:nth-child(4) {
-  transform: rotateY(-90deg) translateZ(150px);
-}
-
-.three-d-item:nth-child(5) {
-  transform: rotateX(90deg) translateZ(150px);
-}
-
-.three-d-item:nth-child(6) {
-  transform: rotateX(-90deg) translateZ(150px);
-}
-
-.a:checked ~ .three-d-cube {
-  transform: translateZ(-150px) rotateY(0deg);
-}
-
-.b:checked ~ .three-d-cube {
-  transform: translateZ(-150px) rotateX(-180deg);
-}
-
-.c:checked ~ .three-d-cube {
-  transform: translateZ(-150px) rotateY(-90deg);
-}
-
-.d:checked ~ .three-d-cube {
-  transform: translateZ(-150px) rotateY(90deg);
-}
-
-.e:checked ~ .three-d-cube {
-  transform: translateZ(-150px) rotateX(-90deg);
-}
-
-.f:checked ~ .three-d-cube {
-  transform: translateZ(-150px) rotateX(90deg);
-}
-
-.three-d-bullet {
-  margin: 350px 10px 0 0;
-  float: left;
-}
-
-.three-d-bullet:first-child {
-  margin: 350px 10px 0 88px;
 }
 
 p {

@@ -1,0 +1,84 @@
+@import "./presets";
+
+#centerBox {
+	height: $myWorkHeight;
+	width: $myWorkWidth;
+	left: calc($leftWidth + 1px);
+	display: inline-flex;
+	position: fixed;
+	margin-top: 1px;
+	@include flexCenter;
+	outline: 1px solid yellow;
+}
+
+.child {
+	height: calc($myWorkHeight / 3);
+	width: calc(1745px / 5);
+	min-height: calc($myWorkHeight / 5);
+	min-width: calc(1745px / 5);
+	// background-color: red;
+	outline: 1px solid blue;
+	@include flexCenter;
+	position: absolute;
+}
+
+.child:nth-child(1) {
+	top: 0;
+	left: 0;
+}
+.child:nth-child(2) {
+	top: 0;
+	left: calc(1740px / 5) + 1px;
+}
+.child:nth-child(3) {
+	top: 0;
+	left: calc((1740px / 5) * 2) + 2px;
+}
+.child:nth-child(4) {
+	top: 0;
+	left: calc((1740px / 5) * 3) + 3px;
+}
+.child:nth-child(5) {
+	top: 0;
+	left: calc((1740px / 5) * 4) + 4px;
+}
+.child:nth-child(6) {
+	top: calc(966px / 3);
+	left: 0;
+}
+.child:nth-child(7) {
+	top: calc(966px / 3);
+	left: calc(1740px / 5) + 1px;
+}
+.child:nth-child(8) {
+	top: calc(966px / 3);
+	left: calc((1740px / 5) * 2) + 2px;
+}
+.child:nth-child(9) {
+	top: calc(966px / 3);
+	left: calc((1740px / 5) * 3) + 3px;
+}
+.child:nth-child(10) {
+	top: calc(966px / 3);
+	left: calc((1740px / 5) * 4) + 4px;
+}
+.child:nth-child(11) {
+	top: calc((966px / 3) * 2);
+	left: 0;
+}
+.child:nth-child(12) {
+	top: calc((966px / 3) * 2);
+	left: calc(1740px / 5) + 1px;
+}
+.child:nth-child(13) {
+	top: calc((966px / 3) * 2);
+	left: calc((1740px / 5) * 2) + 2px;
+}
+.child:nth-child(14) {
+	top: calc((966px / 3) * 2);
+	left: calc((1740px / 5) * 3) + 3px;
+}
+.child:nth-child(15) {
+	top: calc((966px / 3) * 2);
+	left: calc((1740px / 5) * 4) + 4px;
+}

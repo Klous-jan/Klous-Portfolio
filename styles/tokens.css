@@ -1,0 +1,59 @@
+.ul-image {
+  display: flex;
+  list-style: none;
+}
+.ul-image li {
+  position: relative;
+  margin: 0 3em;
+}
+.ul-image li .image,
+.ul-image li .shadow {
+  transform: rotateX(45deg) rotateZ(-25deg);
+  transform-style: preserve-3d;
+  transition: 0.3s;
+}
+.ul-image li .image {
+  position: relative;
+}
+.ul-image li .image img {
+  vertical-align: bottom;
+  filter: grayscale(75%);
+  transition: 0.2s;
+  height: 100px;
+  z-index: 10;
+}
+.ul-image li .image::before,
+.ul-image li .image::after {
+  content: "";
+  position: absolute;
+}
+.ul-image li .image::before {
+  bottom: -8px;
+  left: 0;
+  background-color: aliceblue;
+  width: 100%;
+  height: 15px;
+  transform: rotateX(90deg) translateY(-7px);
+}
+.ul-image li .image::after {
+  top: 0;
+  left: -8px;
+  width: 15px;
+  height: 100.5%;
+  background-color: aliceblue;
+  transform: rotateY(90deg) translateX(7px);
+}
+.ul-image li .shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  box-shadow: -20px 50px 20px rgba(0, 0, 0, 0.2);
+}
+.ul-image li:hover .image,
+.ul-image li:hover .shadow {
+  transform: rotatex(0);
+  box-shadow: -20px 50px 20px rgba(0, 0, 0, 0.2);
+}/*# sourceMappingURL=tokens.css.map */
