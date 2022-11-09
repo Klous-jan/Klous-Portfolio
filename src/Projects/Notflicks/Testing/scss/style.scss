@@ -1,0 +1,74 @@
+body {
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+@mixin position {
+    position: absolute;
+    left: 25%;
+}
+
+@mixin outline {
+    outline: 1px solid white;
+}
+
+@mixin HandW {
+    height: 50%;
+    width: 50%;
+}
+
+@mixin flexCenter {
+    justify-content: center;
+    align-items: center;
+    display: block;
+}
+
+@mixin master {
+    @include flexCenter;
+    @include HandW;
+    @include position;
+    @include outline;
+}
+
+.five {
+    @include master;
+    background-color: green;
+    .four {
+        @include master;
+        background-color: blue;
+        .three {
+            @include master;
+            background-color: red;
+            .two {
+                @include master;
+                background-color: yellow;
+                .one {
+                    @include master;
+                    background-color: pink;
+                }
+            }
+        }
+    }
+}
+
+p {
+    font-size: 22px;
+    color: black;
+    z-index: 12;
+}
+
+$style: right;
+span .ui-slider-handle {
+    @if $style==left {
+        content: "this is content";
+    }
+    @else if $style==right {
+        content: "nope";
+    }
+}
+
+span {
+    font-size: 55px;
+    font-family: 'Courier New', Courier, monospace;
+}

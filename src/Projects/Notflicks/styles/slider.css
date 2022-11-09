@@ -1,0 +1,21 @@
+#slide {
+    width: 20.5vw;
+    height: .9vw;
+    margin-left: 2vw;
+    position: relative;
+    display: flex;
+    z-index: 2;
+}
+
+#dot {
+    height: 1.1vw;
+    width: 1.1vw;
+    border-radius: 90%;
+    background-color: aliceblue;
+    display: inline-block;
+    margin-left: 2vw;
+    position: relative;
+    top: -.98vw;
+    display: flex;
+    left: 324px;
+}

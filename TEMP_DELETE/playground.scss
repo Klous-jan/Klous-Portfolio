@@ -3,16 +3,23 @@ html {
 	min-width: 320px;
 }
 body {
-	/* font-size: 1.6rem;
-	line-height: 1.5; */
-	background: #1d1d1d;
-	/* display: block;
-	min-width: 320px;
-	font-family: "Open Sans", sans-serif;
-	color: #fff;
-	padding-left: 13rem;
-	overflow-y: scroll;
-	overflow-x: hidden; */
+	margin: 0px;
+}
+
+.card {
+	aspect-ratio: 5 / 7;
+	background-color: rgba(255, 255, 255, 0.05);
+	position: absolute;
+}
+
+.big-card {
+	width: 30vmin;
+	border-radius: 1vmin;
+}
+
+.little-card {
+	width: 12vmin;
+	border-radius: 2vmin;
 }
 
 $color: Pink;

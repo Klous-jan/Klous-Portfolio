@@ -1,0 +1,80 @@
+#dialog-overlay {
+  display: none;
+  opacity: 0.8;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  background: rgb(29, 30, 31);
+  width: 100%;
+  z-index: 10;
+}
+
+#dialog-box {
+  display: none;
+  margin-top: 12vw;
+  position: fixed;
+  background: #000;
+  border-radius: 7px;
+  width: 550px;
+  z-index: 10;
+}
+
+#dialog-box > div {
+  background: #FFF;
+  margin: 8px;
+}
+
+#dialog-box > div > #dialog-box-head {
+  background: #666;
+  font-size: 19px;
+  padding: 10px;
+  color: #CCC;
+}
+
+#dialog-box > div > #dialog-box-body {
+  background: #333;
+  padding: 20px;
+  color: #FFF;
+}
+
+#dialog-box > div > #dialog-box-foot-D {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: right;
+  float: right;
+  padding-right: 10px;
+}
+
+#dialog-box > div > #dialog-box-foot-C {
+  background-size: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: right;
+  float: right;
+  padding-right: 10px;
+}
+
+.delete-button {
+  padding-left: 2vw;
+  padding-right: 2vw;
+  padding-top: 0.5vw;
+  padding-bottom: 0.5vw;
+  vertical-align: middle;
+  display: inline-block;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-size: 1.5vw;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  color: grey;
+  background-color: rgb(20, 20, 20);
+  border: 1px solid grey;
+}
+
+.delete-button:hover {
+  border: 1px solid aliceblue;
+  color: aliceblue;
+}/*# sourceMappingURL=dialogBox.css.map */

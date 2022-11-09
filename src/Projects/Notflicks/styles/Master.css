@@ -1,0 +1,18 @@
+/* * {
+    outline: 1px solid red;
+} */
+
+body,
+html {
+	background-color: rgb(20, 20, 20) !important;
+	height: 100%;
+	overflow-x: hidden;
+}
+
+*.unsel {
+	-moz-user-select: -moz-none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
