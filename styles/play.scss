@@ -207,11 +207,6 @@ body {
 	cursor: pointer;
 }
 
-#love-button {
-	color: rgb(33, 150, 243);
-	border-color: rgb(33, 150, 243);
-}
-
 .maincontainer {
 	position: absolute;
 	width: 250px;
@@ -374,7 +369,7 @@ body {
 }
 
 .carousel__cell:nth-child(5n + 1) {
-	background: hsla(0, 100%, 50%, 0.8);
+	background: hsla(0, 0%, 0%, 0.8);
 }
 .carousel__cell:nth-child(5n + 2) {
 	background: hsla(40, 100%, 50%, 0.8);
