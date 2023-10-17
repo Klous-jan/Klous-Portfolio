@@ -23,12 +23,12 @@ body {
 }
 
 .grid {
-	display: block;
+	display: flex;
+	flex-wrap: wrap;
 	padding-right: 16px;
 	padding-left: 56px;
 	padding-top: 16px;
 	padding-bottom: 16px;
-	display: grid;
 	grid-gap: 16px;
 }
 
@@ -37,21 +37,15 @@ body {
 		padding-right: -16rem !important;
 	}
 }
-// @media (min-width: 960px) {
-// 	.grid {
-// 		grid-template-columns: repeat(3, 1fr);
-// 	}
-// }
-// @media (min-width: 1200px) {
-// 	.grid {
-// 		grid-template-columns: repeat(4, 1fr);
-// 	}
-// }
+
 .grid .child {
 	background-color: rgba(128, 65, 211, 0.192);
 	padding: 60px;
 	@include flexCenter;
 	position: relative;
+	display: flex;
+	flex: 1 0 140px;
+	outline: blue solid 2px;
 }
 
 img {

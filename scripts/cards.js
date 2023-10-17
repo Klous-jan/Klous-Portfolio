@@ -6,25 +6,26 @@ function flipCard() {
 
 // ===========================================================
 
-var cgi = document.getElementById("cgi");
-var cgii = document.getElementById("cgii");
-var cgiii = document.getElementById("cgiii");
-var cgiv = document.getElementById("cgiv");
-var cgv = document.getElementById("cgv");
+var cgi = document.getElementById("cgi"),
+	cgii = document.getElementById("cgii"),
+	cgiii = document.getElementById("cgiii"),
+	cgiv = document.getElementById("cgiv"),
+	cgv = document.getElementById("cgv");
 
-var carousel = document.querySelector(".carousel");
-var cellCount = 5;
-var selectedIndex = 0;
-// var group = document.getElementById("carousel-top");
-// var activeIndex = group.getAttribute("loc");
-// var indexInc = activeIndex;
-// var clickCounter = 0;
-var array = [1, 2, 3, 4, 5];
+var carousel = document.querySelector(".carousel"),
+	cellCount = 5,
+	selectedIndex = 0,
+	array = [1, 2, 3, 4, 5];
 
 function rotateCarousel() {
-	var angle = (selectedIndex / cellCount) * -360;
-	carousel.style.transform = "translateZ(-288px) rotateY(" + angle + "deg)";
 	selectedIndex = selectedIndex % array.length;
+	console.log(array.length);
+	deg = -360;
+	angleRotate = deg / array.length;
+	angle = (selectedIndex / cellCount) * deg;
+	// carousel.style.transform = "translateZ(-288px) rotateY(" + angle + "deg)";
+	carousel.style.transform = "rotateY(" + angle + "deg)";
+	// hiding background cards
 	cgi.setAttribute("loc", array[selectedIndex]);
 	cgii.setAttribute("loc", array[selectedIndex] - 1);
 	cgiii.setAttribute("loc", array[selectedIndex] - 2);
@@ -55,36 +56,6 @@ function rotateCarousel() {
 	} else {
 		cgv.removeAttribute("hidden");
 	}
-
-	// 012 210 210 521 10-3  -3 0 2 5
-
-	// if (cgi.getAttribute("loc") !== 1) {
-	// 	cgi.setAttribute("opacity", "0.1");
-	// } else {
-	// 	cgi.setAttribute("opacity", "1");
-	// }
-	// if (cgii.getAttribute("loc") !== 1) {
-	// 	cgii.setAttribute("opacity", "0.1");
-	// } else {
-	// 	cgii.setAttribute("opacity", "1");
-	// }
-	// if (cgiii.getAttribute("loc") !== 1) {
-	// 	cgiii.setAttribute("opacity", "0.1");
-	// } else {
-	// 	cgiii.setAttribute("opacity", "1");
-	// }
-	// if (cgiv.getAttribute("loc") !== 1) {
-	// 	cgiv.setAttribute("opacity", "0.1");
-	// } else {
-	// 	cgiv.setAttribute("opacity", "1");
-	// }
-	// if (cgv.getAttribute("loc") !== 1) {
-	// 	cgv.setAttribute("opacity", "0.1");
-	// } else {
-	// 	cgv.setAttribute("opacity", "1");
-	// }
-	// console.log(carousel.style.transform);
-	// console.log("Current Item:", array[selectedIndex]);
 }
 
 // previous-button || LEFT BUTTON || -1

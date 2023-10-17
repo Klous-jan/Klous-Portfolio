@@ -1,0 +1,222 @@
+@import "./presets";
+$primeColor: rgb(189, 211, 175);
+$secondColor: rgb(0, 0, 230);
+$thirdColor: rgb(182, 182, 212);
+$fourthColor: rgb(135, 106, 99);
+$fifthColor: rgb(212, 175, 165);
+$fontFamily: "SF UI Text", "Helvetica Neue", "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Open Sans", sans-serif;
+
+// overall
+
+body {
+	font-family: $fontFamily;
+}
+
+.company h3 span:before {
+	content: " — ";
+	font-weight: normal;
+}
+
+.company h3 span {
+	font-weight: normal;
+}
+
+.main_container {
+	border: 1px solid coral; // co.ral COntainer
+	height: 100vh;
+	width: calc(100vw - 17.5rem);
+	left: 17rem;
+	display: inline-flex;
+	position: fixed;
+	justify-content: center;
+	overflow: scroll;
+	overflow-x: hidden;
+	scrollbar-width: 1px;
+}
+
+.outer_container {
+	height: 100vh;
+	display: inline-flex;
+	position: relative;
+	width: 95%;
+	// width: calc(90% - $leftWidth);
+	top: 0;
+	margin-top: 6vh;
+	// outline: 1px solid orchid; // o.rchid - Outside container
+	// overflow: scroll;
+	// overflow-x: hidden;
+	// scrollbar-width: 1px;
+}
+
+.left_container {
+	display: block;
+	position: fixed;
+	width: 32rem;
+	height: 100vh;
+	margin-top: 55px;
+}
+
+.rightContainer {
+	display: block;
+	position: relative;
+	width: 80%;
+	// outline: 1px solid coral; // co.ral COntainer
+	margin-top: 55px;
+	margin-left: calc(32rem + 6%);
+	margin-right: 6%;
+}
+
+.leftHeadInfo {
+	display: flex;
+	text-align: center;
+	position: relative;
+	width: 100%;
+	aspect-ratio: 1 / 0.6;
+	// border: 1px solid white;
+	// border: 1px solid white;
+	border-radius: 90% 90% 0 0;
+	background-color: $secondColor; // header rounded top
+}
+
+.leftHeadInfo::after {
+	display: inline-block;
+	position: absolute;
+	content: "";
+	width: 90%;
+	aspect-ratio: 1 / 0.6;
+	border: 4px solid $fifthColor;
+	border-radius: 90% 90% 0 0;
+	border-bottom: none;
+	left: 11.5%;
+	margin-top: 5%;
+	margin-left: -25px;
+}
+
+.leftSkillsInfo::after {
+	display: inline-block;
+	position: absolute;
+	content: "";
+	width: 90%;
+	height: 100%;
+	aspect-ratio: 1 / 0.6;
+	border: 4px solid $fifthColor;
+	border-bottom: none;
+	border-top: none;
+	left: 11.5%;
+	margin-left: -25px;
+}
+
+.headInfo-list {
+	display: block;
+	align-items: center;
+	text-align: left;
+	margin: 0;
+	margin-top: 25%;
+	margin-left: 10%;
+	padding: 0;
+	width: 100%;
+	aspect-ratio: 1 / 1;
+	// outline: 1px solid indigo; // in.digo - INside container
+	list-style: none;
+}
+
+.headtitleList {
+	margin-bottom: -20px;
+}
+
+.titleList {
+	margin-bottom: 5px;
+	// outline: 1px solid lightgreen; // li.ghtgreen LIst item
+}
+
+.leftSkillsInfo {
+	display: flex;
+	text-align: center;
+	width: 100%;
+	height: 100%;
+	// outline: 1px solid dimgray; // di.mgray - DIv
+	background-color: $secondColor; // Left bar column
+}
+
+.skill-headers {
+	display: block;
+	align-items: center;
+	text-align: left;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	margin-left: 10%;
+	width: 100%;
+	// outline: 1px solid indigo; // in.digo - INside container
+}
+
+.skill-lists {
+	padding: 0;
+	margin-left: 8%;
+	list-style: square;
+}
+
+.titleInfo {
+	margin-bottom: -20px;
+}
+
+.secondSkills {
+	margin-top: 15%;
+}
+
+.firstInfo {
+	margin-top: 0;
+}
+
+.left_container ul {
+	color: $fifthColor;
+}
+
+#name {
+	color: $primeColor;
+	font-size: 10rem;
+	margin-top: 7%;
+	line-height: 85px;
+	margin-bottom: 1rem;
+}
+
+.company header {
+	display: flex;
+	align-items: baseline;
+	// outline: 1px solid blue;
+}
+
+.period {
+	margin-left: auto;
+	margin-right: 2rem;
+}
+
+article p {
+	max-width: 70%;
+	color: $thirdColor;
+	font-size: 2.1rem;
+}
+
+article > header > h2 {
+	color: $fourthColor;
+	font-size: 3rem;
+}
+
+article h2,
+article h3 {
+	color: $fifthColor;
+}
+
+span {
+	color: $thirdColor;
+	font-weight: normal;
+}
+
+article ul {
+	list-style: none;
+	padding: 0;
+}
+.points {
+	list-style: square;
+	padding-left: 40px;
+}
