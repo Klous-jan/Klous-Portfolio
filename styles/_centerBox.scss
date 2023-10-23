@@ -7,6 +7,7 @@
 	position: fixed;
 	top: 0;
 	@include flexCenter;
+	outline: 1px solid yellow;
 	.nameArea {
 		padding-left: 50px;
 		margin: 0;
@@ -24,5 +25,62 @@
 		color: rgb(189, 211, 175);
 		@include Font-Minor;
 		text-decoration: none;
+	}
+}
+
+@media only screen and (max-width: 1700px) {
+	#centerBox {
+		// background-color: lightblue;
+		width: calc($totalWidth / 2);
+		div {
+			header {
+				.nameArea {
+					font-size: 54px;
+				}
+			}
+		}
+	}
+	#rightBox {
+		// opacity: 0;
+	}
+}
+
+@media only screen and (max-width: 1450px) {
+	#centerBox {
+		// background-color: lightblue;
+		width: $totalWidth;
+		div {
+			header {
+				.nameArea {
+					font-size: 54px;
+				}
+			}
+			.aboutArea {
+				font-size: 12px;
+			}
+		}
+	}
+	#rightBox {
+		opacity: 0;
+	}
+}
+
+@media only screen and (max-width: 1050px) {
+	#centerBox {
+		// background-color: lightblue;
+		width: $totalWidth;
+		div {
+			header {
+				.nameArea {
+					font-size: 50px;
+				}
+			}
+			.aboutArea {
+				font-size: 12px;
+			}
+		}
+	}
+	#rightBox {
+		opacity: 0;
 	}
 }

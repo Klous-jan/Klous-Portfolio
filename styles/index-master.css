@@ -8,6 +8,10 @@ body {
   margin: 0;
 }
 
+p {
+  margin-top: 0;
+}
+
 #centerBox {
   height: 100vh;
   width: calc((100% - 17rem) / 2);
@@ -18,6 +22,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  outline: 1px solid yellow;
 }
 #centerBox .nameArea {
   padding-left: 50px;
@@ -44,6 +49,42 @@ body {
   text-decoration: none;
 }
 
+@media only screen and (max-width: 1700px) {
+  #centerBox {
+    width: calc((100% - 17rem) / 2);
+  }
+  #centerBox div header .nameArea {
+    font-size: 54px;
+  }
+}
+@media only screen and (max-width: 1450px) {
+  #centerBox {
+    width: calc(100% - 17rem);
+  }
+  #centerBox div header .nameArea {
+    font-size: 54px;
+  }
+  #centerBox div .aboutArea {
+    font-size: 12px;
+  }
+  #rightBox {
+    opacity: 0;
+  }
+}
+@media only screen and (max-width: 1050px) {
+  #centerBox {
+    width: calc(100% - 17rem);
+  }
+  #centerBox div header .nameArea {
+    font-size: 50px;
+  }
+  #centerBox div .aboutArea {
+    font-size: 12px;
+  }
+  #rightBox {
+    opacity: 0;
+  }
+}
 html {
   font-size: 62.5%;
   min-width: 320px;
@@ -259,6 +300,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  outline: 1px solid yellow;
 }
 #centerBox .nameArea {
   padding-left: 50px;
@@ -285,6 +327,42 @@ body {
   text-decoration: none;
 }
 
+@media only screen and (max-width: 1700px) {
+  #centerBox {
+    width: calc((100% - 17rem) / 2);
+  }
+  #centerBox div header .nameArea {
+    font-size: 54px;
+  }
+}
+@media only screen and (max-width: 1450px) {
+  #centerBox {
+    width: calc(100% - 17rem);
+  }
+  #centerBox div header .nameArea {
+    font-size: 54px;
+  }
+  #centerBox div .aboutArea {
+    font-size: 12px;
+  }
+  #rightBox {
+    opacity: 0;
+  }
+}
+@media only screen and (max-width: 1050px) {
+  #centerBox {
+    width: calc(100% - 17rem);
+  }
+  #centerBox div header .nameArea {
+    font-size: 50px;
+  }
+  #centerBox div .aboutArea {
+    font-size: 12px;
+  }
+  #rightBox {
+    opacity: 0;
+  }
+}
 .ul-image {
   display: flex;
   list-style: none;
@@ -445,8 +523,4 @@ body {
   font-family: "Montserrat", sans-serif;
   font-weight: 300;
   text-decoration: none;
-}
-
-p {
-  margin-top: 0;
 }/*# sourceMappingURL=index-master.css.map */
