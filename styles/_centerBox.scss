@@ -40,9 +40,6 @@
 			}
 		}
 	}
-	#rightBox {
-		// opacity: 0;
-	}
 }
 
 @media only screen and (max-width: 1450px) {
@@ -61,7 +58,7 @@
 		}
 	}
 	#rightBox {
-		opacity: 0;
+		display: none !important;
 	}
 }
 
@@ -72,7 +69,7 @@
 		div {
 			header {
 				.nameArea {
-					font-size: 50px;
+					font-size: 54px;
 				}
 			}
 			.aboutArea {
@@ -81,6 +78,46 @@
 		}
 	}
 	#rightBox {
-		opacity: 0;
+		display: none !important;
+	}
+}
+
+@media only screen and (max-width: 805px) {
+	#centerBox {
+		// background-color: lightblue;
+		width: $totalWidth;
+		div {
+			header {
+				.nameArea {
+					font-size: 40px;
+				}
+			}
+			.aboutArea {
+				font-size: 12px;
+			}
+		}
+	}
+	#rightBox {
+		display: none !important;
+	}
+}
+
+@media only screen and (max-width: 660px) {
+	#centerBox {
+		// background-color: lightblue;
+		width: $totalWidth;
+		div {
+			header {
+				.nameArea {
+					font-size: 28px;
+				}
+			}
+			.aboutArea {
+				font-size: 12px;
+			}
+		}
+	}
+	#rightBox {
+		display: none !important;
 	}
 }

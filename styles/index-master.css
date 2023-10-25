@@ -68,7 +68,7 @@ p {
     font-size: 12px;
   }
   #rightBox {
-    opacity: 0;
+    display: none !important;
   }
 }
 @media only screen and (max-width: 1050px) {
@@ -76,13 +76,41 @@ p {
     width: calc(100% - 17rem);
   }
   #centerBox div header .nameArea {
-    font-size: 50px;
+    font-size: 54px;
   }
   #centerBox div .aboutArea {
     font-size: 12px;
   }
   #rightBox {
-    opacity: 0;
+    display: none !important;
+  }
+}
+@media only screen and (max-width: 805px) {
+  #centerBox {
+    width: calc(100% - 17rem);
+  }
+  #centerBox div header .nameArea {
+    font-size: 40px;
+  }
+  #centerBox div .aboutArea {
+    font-size: 12px;
+  }
+  #rightBox {
+    display: none !important;
+  }
+}
+@media only screen and (max-width: 660px) {
+  #centerBox {
+    width: calc(100% - 17rem);
+  }
+  #centerBox div header .nameArea {
+    font-size: 28px;
+  }
+  #centerBox div .aboutArea {
+    font-size: 12px;
+  }
+  #rightBox {
+    display: none !important;
   }
 }
 html {
@@ -346,7 +374,7 @@ body {
     font-size: 12px;
   }
   #rightBox {
-    opacity: 0;
+    display: none !important;
   }
 }
 @media only screen and (max-width: 1050px) {
@@ -354,13 +382,41 @@ body {
     width: calc(100% - 17rem);
   }
   #centerBox div header .nameArea {
-    font-size: 50px;
+    font-size: 54px;
   }
   #centerBox div .aboutArea {
     font-size: 12px;
   }
   #rightBox {
-    opacity: 0;
+    display: none !important;
+  }
+}
+@media only screen and (max-width: 805px) {
+  #centerBox {
+    width: calc(100% - 17rem);
+  }
+  #centerBox div header .nameArea {
+    font-size: 40px;
+  }
+  #centerBox div .aboutArea {
+    font-size: 12px;
+  }
+  #rightBox {
+    display: none !important;
+  }
+}
+@media only screen and (max-width: 660px) {
+  #centerBox {
+    width: calc(100% - 17rem);
+  }
+  #centerBox div header .nameArea {
+    font-size: 28px;
+  }
+  #centerBox div .aboutArea {
+    font-size: 12px;
+  }
+  #rightBox {
+    display: none !important;
   }
 }
 .ul-image {
