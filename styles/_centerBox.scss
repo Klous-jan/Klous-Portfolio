@@ -12,17 +12,17 @@
 		padding-left: 50px;
 		margin: 0;
 		margin-bottom: 20px;
-		color: rgb(189, 211, 175);
+		color: $primeColor;
 		@include Font-Major;
 	}
 	.aboutArea {
 		padding-left: 80px;
-		color: aliceblue;
+		color: $thirdColor;
 		@include Font-Minor;
 	}
 	.aboutAreaContact {
 		padding-left: 80px;
-		color: rgb(189, 211, 175);
+		color: $primeColor;
 		@include Font-Minor;
 		text-decoration: none;
 	}

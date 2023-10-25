@@ -171,7 +171,7 @@
 
 article p {
   max-width: 70%;
-  color: rgb(182, 182, 212);
+  color: aliceblue;
   font-size: 2.1rem;
 }
 
@@ -186,7 +186,7 @@ article h3 {
 }
 
 span {
-  color: rgb(182, 182, 212);
+  color: aliceblue;
   font-weight: normal;
 }
 
