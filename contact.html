@@ -71,16 +71,97 @@
         </ul>
     </menu>
     <div id="centerBox">
-    <div>
-        <header>
-            <h2 class="nameArea">Stay Awhile and Listen</h2>
-        </header>
-        <p class="aboutArea">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam optio, quos ab beatae veritatis eius tempore earum accusamus praesentium hic dolorem fugiat, nobis, consequatur dicta doloribus. Praesentium quae rem vitae.</p>
-        <p class="aboutArea">Lorem ipsum dolor Eveniet cum totam vitae, ex nihil maxime, possimus provident in cumque eius sit amet consectetur adipisicing elit. inventore facilis? Incidunt asperiores tempore magnam praesentium quidem, possimus voluptates!</p>
-        <p class="aboutArea">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos itaque expedita voluptates quas, qui a culpa adipisci ratione nobis! Debitis eos, eum quis corporis aspernatur alias iste libero modi sed!</p>
-        <h2><a class="aboutAreaContact" href="./contact.html">Let talk more!</a></h2>
+        <div>
+            <header>
+                <h2 class="nameArea nameAreaContact contactTop">Let's build </h2>
+                <h2 class="nameArea nameAreaContact contactBottom">something together.</h2>
+            </header>
+            <div class="container">
+                <form action="/action_page.php">
+                    <div>
+                        <!-- <label class="labelText" for="cName">Company Name</label> -->
+                        <input
+                            type="text"
+                            id="cName"
+                            class="leftInput inputField inDec"
+                            name="companyName"
+                            placeholder="*Company Name"
+                            required>
+
+                        <!-- <label class="labelText" for="cURL">Company URL</label> -->
+                        <input
+                            type="text"
+                            id="cURL"
+                            class="rightInput inputField inDec"
+                            name="companyURL"
+                            placeholder="*Company URL"
+                            required>
+                    </div>
+                    <div>
+                        <!-- <label class="labelText" for="fname">First Name</label> -->
+                        <input
+                            type="text"
+                            id="fName"
+                            class="leftInput inputField inDec"
+                            name="firstName"
+                            placeholder="*First Name"
+                            required>
+
+                        <!-- <label class="labelText" for="lname">Last Name</label> -->
+                        <input
+                            type="text"
+                            id="lName"
+                            class="rightInput inputField inDec"
+                            name="lastname"
+                            placeholder="*Last Name"
+                            required>
+                    </div>
+                    <div class="email">
+                        <div>
+                            <!-- <label class="labelText" for="bEmail">Business Email</label> -->
+                            <input
+                                type="text"
+                                id="bEmail"
+                                class="leftInput inputField inDec"
+                                name="businessEmail"
+                                placeholder="*Business Email"
+                                required>
+                        </div>
+                        <div class="number">
+                        <!-- <label class="labelText" for="cNum">Contact Number</label> -->
+                        <input
+                            type="text"
+                            id="cNum"
+                            class="numInput inputField inDec"
+                            name="contactNumber"
+                            placeholder="*Contact Number"
+                            required>
+                        
+                        <!-- <label class="labelText" for="cExt">Extension</label> -->
+                        <input
+                            type="text"
+                            id="cExt"
+                            class="extInput inputField inDec"
+                            name="Extension"
+                            placeholder="Ext">
+                        </div>
+                    </div>
+                    <!-- <label class="labelText" for="cLoc">Company Location</label> -->
+                    <select id="cLoc" class="inDec" name="country">
+                        <option value="Company Location" hidden disabled selected required>Where is your company located?</option>
+                        <option value="australia">Australia</option>
+                        <option value="canada">Canada</option>
+                        <option value="usa">USA</option>
+                    </select>
+
+                    <!-- <label for="subject">Subject</label> -->
+                    <textarea id="subject" name="subject" placeholder="How can I help you?" style="height:200px" required></textarea>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
     </div>
-    <div id="centerBox">
+    <div class="bg"></div>
 </body>
 
 </html>

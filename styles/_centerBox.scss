@@ -3,12 +3,34 @@
 	height: 100vh;
 	width: $centerWidth;
 	left: $leftWidth;
-	display: inline-flex;
+	// display: inline-flex;
 	position: fixed;
 	top: 0;
 	@include flexCenter;
 	outline: 1px solid yellow;
 	.nameArea {
+		padding-left: 50px;
+		margin: 0;
+		margin-bottom: 20px;
+		color: $primeColor;
+		@include Font-Major;
+	}
+	.nameAreaContact {
+		padding-left: 50px;
+		margin: 0;
+		margin-bottom: 0px;
+		color: $primeColor;
+		@include Font-Major;
+	}
+	.contactTop {
+		padding-left: 50px;
+		margin: 0;
+		margin-bottom: -20px;
+		color: $primeColor;
+		@include Font-Major;
+		font-weight: 100;
+	}
+	.contactBottom {
 		padding-left: 50px;
 		margin: 0;
 		margin-bottom: 20px;
@@ -25,6 +47,74 @@
 		color: $primeColor;
 		@include Font-Minor;
 		text-decoration: none;
+	}
+	.container {
+		padding: 20px;
+		padding-left: 50px;
+		padding-right: 50px;
+		form {
+			div {
+				display: inline-flex;
+				flex-direction: row;
+				width: 100%;
+				gap: 20px;
+				.inputField {
+					width: 50%;
+				}
+			}
+			.email {
+				width: 100%;
+				.leftInput {
+					width: 100%;
+				}
+				.number {
+					width: 100%;
+					.numInput {
+						width: 70%;
+					}
+					.extInput {
+						width: 30%;
+					}
+				}
+			}
+		}
+		input[type="text"],
+		input,
+		select,
+		textarea {
+			width: 100%;
+			padding: 12px;
+			border: 1px solid #ccc;
+			border-radius: 10px;
+			box-sizing: border-box;
+			margin-top: 6px;
+			margin-bottom: 16px;
+			resize: vertical;
+		}
+		input[type="submit"] {
+			@include Font-Minor;
+			background-color: $fourthColor;
+			color: $primeColor;
+			padding: 12px 20px;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+		}
+		input[type="submit"]:hover {
+			background-color: $primeColor;
+			color: $fourthColor;
+		}
+		input::placeholder,
+		select,
+		textarea::placeholder {
+			@include Font-Minor;
+			color: rgba(0, 0, 0, 0.6);
+			// outline: 1px solid black;
+		}
+		.submit {
+			color: $thirdColor;
+			background-color: blue;
+		}
 	}
 }
 
