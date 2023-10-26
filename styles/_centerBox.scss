@@ -1,14 +1,18 @@
 @import "./presets";
 #centerBox {
 	height: 100vh;
-	width: $centerWidth;
+	width: calc($centerWidth * 1.2);
 	left: $leftWidth;
 	// display: inline-flex;
 	position: fixed;
 	top: 0;
 	@include flexCenter;
-	outline: 1px solid yellow;
-	.nameArea {
+	// outline: 1px solid yellow;
+	overflow-y: auto;
+	.nameArea,
+	.nameAreaContact,
+	.contactTop,
+	.contactBottom {
 		padding-left: 50px;
 		margin: 0;
 		margin-bottom: 20px;
@@ -16,26 +20,14 @@
 		@include Font-Major;
 	}
 	.nameAreaContact {
-		padding-left: 50px;
-		margin: 0;
 		margin-bottom: 0px;
-		color: $primeColor;
-		@include Font-Major;
 	}
 	.contactTop {
-		padding-left: 50px;
-		margin: 0;
 		margin-bottom: -20px;
-		color: $primeColor;
-		@include Font-Major;
 		font-weight: 100;
 	}
 	.contactBottom {
-		padding-left: 50px;
-		margin: 0;
 		margin-bottom: 20px;
-		color: $primeColor;
-		@include Font-Major;
 	}
 	.aboutArea {
 		padding-left: 80px;
@@ -118,64 +110,32 @@
 	}
 }
 
-@media only screen and (max-width: 1700px) {
+@media only screen and (max-width: 1430px) {
 	#centerBox {
-		// background-color: lightblue;
-		width: calc($totalWidth / 2);
 		div {
 			header {
 				.nameArea {
-					font-size: 54px;
+					font-size: 63px;
 				}
+			}
+			.aboutArea {
+				// font-size: 12px;
 			}
 		}
 	}
 }
 
-@media only screen and (max-width: 1450px) {
+@media only screen and (max-width: 1400px) {
 	#centerBox {
-		// background-color: lightblue;
 		width: $totalWidth;
-		div {
-			header {
-				.nameArea {
-					font-size: 54px;
-				}
-			}
-			.aboutArea {
-				font-size: 12px;
-			}
-		}
 	}
 	#rightBox {
 		display: none !important;
 	}
 }
 
-@media only screen and (max-width: 1050px) {
+@media only screen and (max-width: 925px) {
 	#centerBox {
-		// background-color: lightblue;
-		width: $totalWidth;
-		div {
-			header {
-				.nameArea {
-					font-size: 54px;
-				}
-			}
-			.aboutArea {
-				font-size: 12px;
-			}
-		}
-	}
-	#rightBox {
-		display: none !important;
-	}
-}
-
-@media only screen and (max-width: 805px) {
-	#centerBox {
-		// background-color: lightblue;
-		width: $totalWidth;
 		div {
 			header {
 				.nameArea {
@@ -187,27 +147,28 @@
 			}
 		}
 	}
-	#rightBox {
-		display: none !important;
-	}
 }
 
 @media only screen and (max-width: 660px) {
 	#centerBox {
-		// background-color: lightblue;
-		width: $totalWidth;
 		div {
 			header {
 				.nameArea {
 					font-size: 28px;
 				}
 			}
-			.aboutArea {
-				font-size: 12px;
-			}
 		}
 	}
-	#rightBox {
-		display: none !important;
+}
+
+@media only screen and (max-width: 525px) {
+	#centerBox {
+		div {
+			header {
+				.nameArea {
+					font-size: 25px;
+				}
+			}
+		}
 	}
 }

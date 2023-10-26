@@ -6,16 +6,10 @@
 }
 
 .void {
-  width: 200%;
-  /* max-width: 1024px;
-     margin: auto; */
+  width: 100%;
+  max-width: 1024px;
   position: relative;
-  aspect-ratio: 1/1;
-  right: -435px;
-}
-
-#card-list:hover * {
-  animation-play-state: paused;
+  transform: translateX(50%);
 }
 
 #card-list {
@@ -32,39 +26,20 @@
 .cards-all {
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
   /* 	outline: 2px dashed cyan; */
-  width: 120%;
-  left: -200px;
+  width: 105%;
+  left: -18%;
   animation: rotateCW calc(var(--rotate-speed) * 1s) var(--easing) infinite;
 }
 
 .card {
-  width: 27%;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  width: 8%;
   padding: 16px 24px;
-  gap: 8px;
-  background: rgb(0, 0, 230);
-  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1), 0px 16px 32px rgba(0, 0, 0, 0.1);
-  border-radius: 12px;
-  font-family: "Inter", sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 100%;
-  text-decoration: none;
-  color: aliceblue;
   animation: rotateCCW calc(var(--rotate-speed) * 1s) var(--easing) infinite;
 }
 
-.model-name {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 150%;
-  color: rgb(189, 211, 175);
-  display: block;
+.imgRotate {
+  border-radius: 90%;
 }
 
 li:nth-child(2),
@@ -119,55 +94,53 @@ li:nth-child(11) .card {
 
 @keyframes rotateCW {
   from {
-    transform: translate3d(0px, -50%, -1px) rotate(-230deg);
+    transform: translate3d(0px, 0%, -1px) rotate(-200deg);
   }
   to {
-    transform: translate3d(0px, -50%, 0px) rotate(-500deg);
+    transform: translate3d(0px, -100%, 0px) rotate(-500deg);
   }
 }
 @keyframes rotateCCW {
   from {
-    transform: rotate(230deg);
+    transform: rotate(200deg);
   }
   to {
     transform: rotate(500deg);
   }
 }
-.center-circle {
+.center-circle,
+.second-circle,
+.last-circle {
   position: absolute;
-  width: 55%;
   aspect-ratio: 1/1;
-  left: 50%;
+  left: 35%;
   top: 50%;
   transform: translate(-50%, -50%);
+  box-shadow: 0px 18px 36px -18px rgba(12, 5, 46, 0.3), 0px 30px 60px -12px rgba(12, 5, 46, 0.25);
+}
+
+.center-circle {
+  width: 55%;
+  height: 50%;
   background: rgb(135, 106, 99);
   opacity: 0.75;
-  box-shadow: 0px 18px 36px -18px rgba(12, 5, 46, 0.3), 0px 30px 60px -12px rgba(12, 5, 46, 0.25);
-  border-radius: 50%;
+  background-image: url("/images/Me.jpg");
+  background-position: 10%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 50% 0% 0% 50%;
 }
 
 .second-circle {
-  position: absolute;
-  width: 85%;
-  aspect-ratio: 1/1;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  width: 84%;
   background: rgb(135, 106, 99);
   opacity: 0.5;
-  box-shadow: 0px 18px 36px -18px rgba(12, 5, 46, 0.3), 0px 30px 60px -12px rgba(12, 5, 46, 0.25);
-  border-radius: 50%;
+  border-radius: 50% 0% 0% 50%;
 }
 
 .last-circle {
-  position: absolute;
-  width: 66%;
-  aspect-ratio: 1/1;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  background: rgb(135, 106, 99);
-  opacity: 0.25;
-  box-shadow: 0px 18px 36px -18px rgba(12, 5, 46, 0.3), 0px 30px 60px -12px rgba(12, 5, 46, 0.25);
-  border-radius: 50%;
+  width: 115%;
+  background: #50413e;
+  opacity: 1;
+  border-radius: 50% 0% 0% 50%;
 }/*# sourceMappingURL=skills-rotate.css.map */
