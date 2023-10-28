@@ -188,6 +188,55 @@
   font-weight: 300;
   text-decoration: none;
 }
+#rightBox #contact-wrapper {
+  flex-direction: column;
+  height: 100%;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-items: start;
+}
+#rightBox #contact-wrapper .icon {
+  background-color: rgb(189, 211, 175);
+  border-radius: 90%;
+  height: 10%;
+  aspect-ratio: 1/1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+#rightBox #contact-wrapper .icon svg {
+  height: 80%;
+  aspect-ratio: 1/1;
+  transform: rotate(-20deg);
+}
+#rightBox #contact-wrapper .right-contact {
+  margin: 0;
+}
+#rightBox #contact-wrapper .head-contact {
+  font-size: 40px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  font-weight: 100;
+  margin-top: 5%;
+  color: rgb(189, 211, 175);
+}
+#rightBox #contact-wrapper .link-contact {
+  font-size: 15px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-weight: 900;
+  margin-bottom: 5%;
+  margin-left: 5%;
+  color: aliceblue;
+}
+#rightBox #contact-wrapper hr {
+  width: 100%;
+  margin: 0;
+}
 
 html {
   font-size: 62.5%;

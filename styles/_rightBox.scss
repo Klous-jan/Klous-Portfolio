@@ -25,4 +25,47 @@
 		@include Font-Minor;
 		text-decoration: none;
 	}
+	#contact-wrapper {
+		flex-direction: column;
+		height: 100%;
+		width: 50%;
+		@include flexCenter;
+		align-items: start;
+		// @include Font-Minor;
+		.icon {
+			background-color: $primeColor;
+			border-radius: 90%;
+			height: 10%;
+			aspect-ratio: 1/1;
+			@include flexCenter;
+			margin-bottom: 3rem;
+			svg {
+				height: 80%;
+				aspect-ratio: 1/1;
+				transform: rotate(-20deg);
+			}
+		}
+		.right-contact {
+			margin: 0;
+		}
+		.head-contact {
+			@include Font-Mid;
+			font-size: 30px;
+			font-weight: 100;
+			// margin-bottom: 10%;
+			margin-top: 5%;
+			color: $primeColor;
+		}
+		.link-contact {
+			@include Font-Minor;
+			font-weight: 900;
+			margin-bottom: 5%;
+			margin-left: 5%;
+			color: $thirdColor;
+		}
+		hr {
+			width: 100%;
+			margin: 0;
+		}
+	}
 }
