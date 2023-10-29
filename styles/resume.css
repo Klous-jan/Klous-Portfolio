@@ -1,4 +1,8 @@
 @charset "UTF-8";
+::-webkit-scrollbar {
+  display: none;
+}
+
 .main_container {
   font-family: "SF UI Text", "Helvetica Neue", "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Open Sans", sans-serif;
 }
@@ -46,6 +50,7 @@
   display: block;
   position: relative;
   width: 80%;
+  height: 100%;
   margin-top: 55px;
   margin-left: calc(32rem + 6%);
   margin-right: 6%;
@@ -183,6 +188,7 @@ article > header > h2 {
 article h2,
 article h3 {
   color: rgb(212, 175, 165);
+  margin: 0;
 }
 
 span {
@@ -198,4 +204,23 @@ article ul {
 .points {
   list-style: square;
   padding-left: 40px;
+}
+
+#bot-li {
+  padding-bottom: 55px;
+}
+
+ul li hr {
+  opacity: 0.3;
+  margin-top: 0;
+  margin-bottom: 1em;
+}
+
+@media only screen and (max-width: 1200px) {
+  .left_container {
+    display: none;
+  }
+  .rightContainer {
+    margin-left: 5rem;
+  }
 }/*# sourceMappingURL=resume.css.map */

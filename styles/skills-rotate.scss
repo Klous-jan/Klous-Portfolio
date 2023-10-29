@@ -149,6 +149,8 @@ $circleColor: $fourthColor;
 .center-circle {
 	width: 55%;
 	height: 50%;
+	display: block;
+	right: 100%;
 	background: $circleColor;
 	opacity: 0.75;
 	background-image: url("/images/Me.jpg");

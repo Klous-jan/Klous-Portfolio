@@ -6,11 +6,23 @@
 html {
 	overflow-y: hidden; /* Hide vertical scrollbar */
 	overflow-x: hidden; /* Hide horizontal scrollbar */
+	font-size: 62.5%;
+	min-width: 320px;
 }
 
 body {
 	background-color: #1d1d1d;
 	margin: 0;
+	font-size: 1.6rem;
+	line-height: 1.5;
+	background: #1d1d1d;
+	display: block;
+	min-width: 320px;
+	font-family: "Open Sans", sans-serif;
+	color: #fff;
+	padding-left: 13rem;
+	overflow-y: hidden;
+	overflow-x: hidden;
 }
 
 p {

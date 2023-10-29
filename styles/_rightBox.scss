@@ -2,7 +2,8 @@
 #rightBox {
 	height: 100vh;
 	width: $rightWidth;
-	left: calc($leftWidth + $centerWidth);
+	right: 0;
+	// left: calc($leftWidth + $centerWidth);
 	display: inline-flex;
 	position: fixed;
 	top: 0;
@@ -56,12 +57,21 @@
 			margin-top: 5%;
 			color: $primeColor;
 		}
-		.link-contact {
-			@include Font-Minor;
-			font-weight: 900;
-			margin-bottom: 5%;
-			margin-left: 5%;
-			color: $thirdColor;
+		h3 {
+			width: 100%;
+			.contact {
+				width: 100%;
+				text-decoration: none;
+				@include Font-Minor;
+				font-weight: 900;
+				margin-bottom: 5%;
+				margin-left: 5%;
+				color: $thirdColor;
+			}
+			.link-contact:hover {
+				color: $secondColor;
+				transition: 0.4s;
+			}
 		}
 		hr {
 			width: 100%;

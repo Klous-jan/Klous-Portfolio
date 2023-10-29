@@ -156,7 +156,7 @@
 #rightBox {
   height: 100vh;
   width: calc((100% - 17rem) / 2);
-  left: calc(17rem + (100% - 17rem) / 2);
+  right: 0;
   display: inline-flex;
   position: fixed;
   top: 0;
@@ -224,7 +224,12 @@
   margin-top: 5%;
   color: rgb(189, 211, 175);
 }
-#rightBox #contact-wrapper .link-contact {
+#rightBox #contact-wrapper h3 {
+  width: 100%;
+}
+#rightBox #contact-wrapper h3 .contact {
+  width: 100%;
+  text-decoration: none;
   font-size: 15px;
   font-family: "Montserrat", sans-serif;
   font-weight: 300;
@@ -232,6 +237,10 @@
   margin-bottom: 5%;
   margin-left: 5%;
   color: aliceblue;
+}
+#rightBox #contact-wrapper h3 .link-contact:hover {
+  color: rgb(0, 0, 230);
+  transition: 0.4s;
 }
 #rightBox #contact-wrapper hr {
   width: 100%;
