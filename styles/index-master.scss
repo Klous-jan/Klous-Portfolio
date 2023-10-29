@@ -1,4 +1,4 @@
-@import "./presets";
+@import "../styles/presets";
 // general
 // * {
 //     outline: 1px solid red;
@@ -30,8 +30,8 @@ p {
 }
 
 // styleing
-@import "./leftBox";
-@import "./centerBox";
-@import "./tokens";
-@import "./background";
-@import "./rightBox";
+@import "../styles/leftBox";
+@import "../styles/centerBox";
+@import "../styles/tokens";
+@import "../styles/background";
+@import "../styles/rightBox";
