@@ -221,7 +221,7 @@ p {
   padding-bottom: 10px;
   height: 40px;
   width: 120px;
-  background-image: url(/images/KMLogo.svg);
+  background-image: url(../images/KMLogo.svg);
   background-repeat: no-repeat;
   margin: auto;
   z-index: 1;
