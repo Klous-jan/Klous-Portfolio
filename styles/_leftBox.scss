@@ -3,8 +3,8 @@
 // filter is set to "aliceblue"
 // filter: invert(33%) sepia(65%) saturate(7500%) hue-rotate(334deg) brightness(101%) contrast(98%);
 
-@import "./_presets";
-@import "./centerBox";
+@import "presets";
+@import "centerBox";
 
 // html {
 // 	font-size: 62.5%;
@@ -88,7 +88,7 @@
 			padding-bottom: 10px;
 			height: 40px;
 			width: 120px;
-			background-image: url(/images/KMLogo.svg);
+			background-image: url(../images/KMLogo.svg);
 			background-repeat: no-repeat;
 			margin: auto;
 			z-index: 1;
