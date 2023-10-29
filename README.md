@@ -17,6 +17,7 @@ Welcome to my portfolio website which is currently still in development. Below I
 
 ## v0.9.000 to-do list:
 
+-   Resolve the 'current restrictions' section.
 -   Files need cleaned up to clear any possible redundancies.
 -   Need to add more of my completed projects to the 'My Work' section.
 -   Tweak some styling and animations.
