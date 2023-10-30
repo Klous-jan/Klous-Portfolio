@@ -1,0 +1,129 @@
+#centerBox .nameArea,
+#centerBox .nameAreaContact,
+#centerBox .contactTop,
+#centerBox .contactBottom {
+  padding-left: 50px;
+  margin: 0;
+  margin-bottom: 20px;
+  color: rgb(189, 211, 175);
+  font-size: 65px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+#centerBox .nameAreaContact {
+  margin-bottom: 0px;
+}
+#centerBox .contactTop {
+  margin-bottom: -20px;
+  font-weight: 100;
+}
+#centerBox .contactBottom {
+  margin-bottom: 20px;
+}
+#centerBox .container {
+  padding: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+#centerBox .container form div {
+  display: inline-flex;
+  flex-direction: row;
+  width: 100%;
+  gap: 20px;
+}
+#centerBox .container form div .inputField {
+  width: 50%;
+}
+#centerBox .container form .email {
+  width: 100%;
+}
+#centerBox .container form .email .leftInput {
+  width: 100%;
+}
+#centerBox .container form .email .number {
+  width: 100%;
+}
+#centerBox .container form .email .number .numInput {
+  width: 70%;
+}
+#centerBox .container form .email .number .extInput {
+  width: 30%;
+}
+#centerBox .container input[type=text],
+#centerBox .container input,
+#centerBox .container select,
+#centerBox .container textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+#centerBox .container input[type=submit] {
+  font-size: 15px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  background-color: rgb(135, 106, 99);
+  color: rgb(189, 211, 175);
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+#centerBox .container input[type=submit]:hover {
+  background-color: rgb(189, 211, 175);
+  color: rgb(135, 106, 99);
+}
+#centerBox .container input::-moz-placeholder, #centerBox .container textarea::-moz-placeholder {
+  font-size: 15px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  color: rgba(0, 0, 0, 0.6);
+}
+#centerBox .container input::placeholder,
+#centerBox .container select,
+#centerBox .container textarea::placeholder {
+  font-size: 15px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  color: rgba(0, 0, 0, 0.6);
+}
+#centerBox .container .submit {
+  color: aliceblue;
+  background-color: blue;
+}
+
+@media only screen and (max-width: 1430px) {
+  #centerBox div header .nameArea {
+    font-size: 63px;
+  }
+}
+@media only screen and (max-width: 1400px) {
+  #centerBox {
+    width: calc(100% - 17rem);
+  }
+  #rightBox {
+    display: none !important;
+  }
+}
+@media only screen and (max-width: 925px) {
+  #centerBox div header .nameArea {
+    font-size: 40px;
+  }
+  #centerBox div .aboutArea {
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 660px) {
+  #centerBox div header .nameArea {
+    font-size: 28px;
+  }
+}
+@media only screen and (max-width: 525px) {
+  #centerBox div header .nameArea {
+    font-size: 25px;
+  }
+}/*# sourceMappingURL=contact.css.map */
