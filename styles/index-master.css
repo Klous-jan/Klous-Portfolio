@@ -75,6 +75,21 @@
   align-items: center;
   overflow-y: auto;
 }
+#centerBox .nameArea,
+#centerBox .nameAreaContact,
+#centerBox .contactTop,
+#centerBox .contactBottom {
+  padding-left: 50px;
+  margin: 0;
+  margin-bottom: 20px;
+  color: rgb(189, 211, 175);
+  font-size: 65px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+#centerBox .nameAreaContact {
+  margin-bottom: 0px;
+}
 #centerBox .aboutArea {
   padding-left: 80px;
   color: aliceblue;
@@ -319,6 +334,21 @@
   justify-content: center;
   align-items: center;
   overflow-y: auto;
+}
+#centerBox .nameArea,
+#centerBox .nameAreaContact,
+#centerBox .contactTop,
+#centerBox .contactBottom {
+  padding-left: 50px;
+  margin: 0;
+  margin-bottom: 20px;
+  color: rgb(189, 211, 175);
+  font-size: 65px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+#centerBox .nameAreaContact {
+  margin-bottom: 0px;
 }
 #centerBox .aboutArea {
   padding-left: 80px;

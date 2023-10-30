@@ -1,5 +1,18 @@
 @import "presets";
 #centerBox {
+	.nameArea,
+	.nameAreaContact,
+	.contactTop,
+	.contactBottom {
+		padding-left: 50px;
+		margin: 0;
+		margin-bottom: 20px;
+		color: $primeColor;
+		@include Font-Major;
+	}
+	.nameAreaContact {
+		margin-bottom: 0px;
+	}
 	height: 100vh;
 	width: calc($centerWidth * 1.2);
 	left: $leftWidth;
