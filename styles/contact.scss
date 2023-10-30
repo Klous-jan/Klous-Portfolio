@@ -50,6 +50,13 @@
 			margin-bottom: 16px;
 			resize: vertical;
 		}
+		select {
+			option {
+				span {
+					margin-left: 200px !important;
+				}
+			}
+		}
 		input[type="submit"] {
 			@include Font-Minor;
 			background-color: $fourthColor;

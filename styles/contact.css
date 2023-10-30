@@ -47,6 +47,9 @@
   margin-bottom: 16px;
   resize: vertical;
 }
+#centerBox .container select option span {
+  margin-left: 200px !important;
+}
 #centerBox .container input[type=submit] {
   font-size: 15px;
   font-family: "Montserrat", sans-serif;
