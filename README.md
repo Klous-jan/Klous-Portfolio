@@ -11,7 +11,7 @@ Welcome to my portfolio website which is currently still in development. Below I
     > | ------- | -------------- | ------------ | ----------- | ---------------- |
     > | Chrome  | 118.0.5993.118 | Yes          | 10/29/2023  | Yes              |
     > | Edge    | -----------    | No           | N/A         | N/A              |
-    > | Firefox | -----------    | No           | N/A         | N/A              |
+    > | Firefox | 119.0          | Yes          | 10/29/2023  | Yes              |
     > | Opera   | -----------    | No           | N/A         | N/A              |
     > | Safari  | -----------    | No           | N/A         | N/A              |
 

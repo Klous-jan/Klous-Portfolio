@@ -99,6 +99,7 @@
                     <div>
                         <!-- <label class="labelText" for="fname">First Name</label> -->
                         <input
+                            onkeydown="return /[a-z]/i.test(event.key)"
                             type="text"
                             id="fName"
                             class="leftInput inputField inDec"
@@ -108,6 +109,7 @@
 
                         <!-- <label class="labelText" for="lname">Last Name</label> -->
                         <input
+                            onkeydown="return /[a-z]/i.test(event.key)"
                             type="text"
                             id="lName"
                             class="rightInput inputField inDec"
@@ -127,23 +129,24 @@
                                 required>
                         </div>
                         <div class="number">
-                        <!-- <label class="labelText" for="cNum">Contact Number</label> -->
-                        <input
-                            type="text"
-                            id="cNum"
-                            class="numInput inputField inDec"
-                            name="contactNumber"
-                            placeholder="*Contact Number"
-                            maxlength="12"
-                            required>
-                        
-                        <!-- <label class="labelText" for="cExt">Extension</label> -->
-                        <input
-                            type="text"
-                            id="cExt"
-                            class="extInput inputField inDec"
-                            name="Extension"
-                            placeholder="Ext">
+                            <!-- <label class="labelText" for="cNum">Contact Number</label> -->
+                            <input
+                                type="text"
+                                id="cNum"
+                                class="numInput inputField inDec"
+                                name="contactNumber"
+                                placeholder="*Contact Number"
+                                maxlength="12"
+                                required>
+                            
+                            <!-- <label class="labelText" for="cExt">Extension</label> -->
+                            <input
+                                type="text"
+                                id="cExt"
+                                class="extInput inputField inDec"
+                                name="Extension"
+                                placeholder="Ext"
+                                maxlength="6">
                         </div>
                     </div>
                     <!-- <label class="labelText" for="cLoc">Company Location</label> -->

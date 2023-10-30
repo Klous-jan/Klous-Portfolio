@@ -399,7 +399,7 @@
 }
 #rightBox {
   height: 100vh;
-  width: calc((100% - 17rem) / 2);
+  width: calc(100% - 17rem - (100% - 17rem) / 2 * 1.2);
   right: 0;
   display: inline-flex;
   position: fixed;
@@ -407,6 +407,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  justify-content: left;
 }
 #rightBox .nameArea {
   padding-left: 50px;
@@ -434,7 +435,7 @@
 }
 #rightBox #contact-wrapper {
   flex-direction: column;
-  height: 100%;
+  height: 50%;
   width: 50%;
   display: flex;
   justify-content: center;
@@ -496,6 +497,10 @@ html {
   overflow-x: hidden; /* Hide horizontal scrollbar */
   font-size: 62.5%;
   min-width: 320px;
+}
+html input::-webkit-outer-spin-button,
+html input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
 }
 
 body {

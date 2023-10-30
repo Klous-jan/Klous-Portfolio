@@ -1,6 +1,6 @@
-@import "./presets";
-@import "./centerBox";
-@import "./rightBox";
+@import "../styles/presets";
+@import "../styles/centerBox";
+@import "../styles/rightBox";
 
 html {
 	font-size: 62.5%;
@@ -100,27 +100,27 @@ body {
 }
 
 .big-card:nth-child(2) {
-	background-image: url("/images/cards/5x7-4-1-bg.png");
+	background-image: url("../images/cards/5x7-4-1-bg.png");
 	transform: translateX(-10%) rotate(-1deg);
 }
 
 .big-card:nth-child(4) {
-	background-image: url("/images/cards/5x7-3-1-bg.png");
+	background-image: url("../images/cards/5x7-3-1-bg.png");
 	transform: rotate(2deg);
 }
 
 .big-card:nth-child(6) {
-	background-image: url("/images/cards/5x7-2-1-bg.png");
+	background-image: url("../images/cards/5x7-2-1-bg.png");
 	transform: translateX(-6%) rotate(-3deg);
 }
 
 .big-card:nth-child(8) {
-	background-image: url("/images/cards/5x7-1-1-bg.png");
+	background-image: url("../images/cards/5x7-1-1-bg.png");
 	transform: translate(10%, 3%) rotate(5deg);
 }
 
 .card-group[data-index="1"] > .big-card:nth-child(6) {
-	background-image: url("/images/cards/5x7-3-2-bg.png");
+	background-image: url("../images/cards/5x7-3-2-bg.png");
 }
 
 .card-group[data-index="1"] > .big-card:nth-child(8) {

@@ -1,13 +1,14 @@
 @import "presets";
 #rightBox {
 	height: 100vh;
-	width: $rightWidth;
+	width: $rightWidthADJ;
 	right: 0;
 	// left: calc($leftWidth + $centerWidth);
 	display: inline-flex;
 	position: fixed;
 	top: 0;
 	@include flexCenter;
+	justify-content: left;
 	.nameArea {
 		padding-left: 50px;
 		margin: 0;
@@ -28,7 +29,7 @@
 	}
 	#contact-wrapper {
 		flex-direction: column;
-		height: 100%;
+		height: 50%;
 		width: 50%;
 		@include flexCenter;
 		align-items: start;

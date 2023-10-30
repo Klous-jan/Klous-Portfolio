@@ -24,13 +24,6 @@
 #centerBox .nameAreaContact {
   margin-bottom: 0px;
 }
-#centerBox .contactTop {
-  margin-bottom: -20px;
-  font-weight: 100;
-}
-#centerBox .contactBottom {
-  margin-bottom: 20px;
-}
 #centerBox .aboutArea {
   padding-left: 80px;
   color: aliceblue;
@@ -45,81 +38,6 @@
   font-family: "Montserrat", sans-serif;
   font-weight: 300;
   text-decoration: none;
-}
-#centerBox .container {
-  padding: 20px;
-  padding-left: 50px;
-  padding-right: 50px;
-}
-#centerBox .container form div {
-  display: inline-flex;
-  flex-direction: row;
-  width: 100%;
-  gap: 20px;
-}
-#centerBox .container form div .inputField {
-  width: 50%;
-}
-#centerBox .container form .email {
-  width: 100%;
-}
-#centerBox .container form .email .leftInput {
-  width: 100%;
-}
-#centerBox .container form .email .number {
-  width: 100%;
-}
-#centerBox .container form .email .number .numInput {
-  width: 70%;
-}
-#centerBox .container form .email .number .extInput {
-  width: 30%;
-}
-#centerBox .container input[type=text],
-#centerBox .container input,
-#centerBox .container select,
-#centerBox .container textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  box-sizing: border-box;
-  margin-top: 6px;
-  margin-bottom: 16px;
-  resize: vertical;
-}
-#centerBox .container input[type=submit] {
-  font-size: 15px;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 300;
-  background-color: rgb(135, 106, 99);
-  color: rgb(189, 211, 175);
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-#centerBox .container input[type=submit]:hover {
-  background-color: rgb(189, 211, 175);
-  color: rgb(135, 106, 99);
-}
-#centerBox .container input::-moz-placeholder, #centerBox .container textarea::-moz-placeholder {
-  font-size: 15px;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 300;
-  color: rgba(0, 0, 0, 0.6);
-}
-#centerBox .container input::placeholder,
-#centerBox .container select,
-#centerBox .container textarea::placeholder {
-  font-size: 15px;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 300;
-  color: rgba(0, 0, 0, 0.6);
-}
-#centerBox .container .submit {
-  color: aliceblue;
-  background-color: blue;
 }
 
 @media only screen and (max-width: 1430px) {
@@ -155,7 +73,7 @@
 }
 #rightBox {
   height: 100vh;
-  width: calc((100% - 17rem) / 2);
+  width: calc(100% - 17rem - (100% - 17rem) / 2 * 1.2);
   right: 0;
   display: inline-flex;
   position: fixed;
@@ -163,6 +81,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  justify-content: left;
 }
 #rightBox .nameArea {
   padding-left: 50px;
@@ -190,7 +109,7 @@
 }
 #rightBox #contact-wrapper {
   flex-direction: column;
-  height: 100%;
+  height: 50%;
   width: 50%;
   display: flex;
   justify-content: center;
@@ -327,27 +246,27 @@ body {
 }
 
 .big-card:nth-child(2) {
-  background-image: url("/images/cards/5x7-4-1-bg.png");
+  background-image: url("../images/cards/5x7-4-1-bg.png");
   transform: translateX(-10%) rotate(-1deg);
 }
 
 .big-card:nth-child(4) {
-  background-image: url("/images/cards/5x7-3-1-bg.png");
+  background-image: url("../images/cards/5x7-3-1-bg.png");
   transform: rotate(2deg);
 }
 
 .big-card:nth-child(6) {
-  background-image: url("/images/cards/5x7-2-1-bg.png");
+  background-image: url("../images/cards/5x7-2-1-bg.png");
   transform: translateX(-6%) rotate(-3deg);
 }
 
 .big-card:nth-child(8) {
-  background-image: url("/images/cards/5x7-1-1-bg.png");
+  background-image: url("../images/cards/5x7-1-1-bg.png");
   transform: translate(10%, 3%) rotate(5deg);
 }
 
 .card-group[data-index="1"] > .big-card:nth-child(6) {
-  background-image: url("/images/cards/5x7-3-2-bg.png");
+  background-image: url("../images/cards/5x7-3-2-bg.png");
 }
 
 .card-group[data-index="1"] > .big-card:nth-child(8) {
