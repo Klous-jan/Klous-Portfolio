@@ -7,13 +7,13 @@ Welcome to my portfolio website which is currently still in development. Below I
 -   Currently not functional on mobile.
 -   Some page scaling needs tweaking.
 -   Need to test portfolios responsiveness on multiple browsers.
-    > | Browser | Version #      | Tested (y/n) | Working (y/n/na) |
-    > | ------- | -------------- | ------------ | ---------------- |
-    > | Chrome  | 118.0.5993.118 | Yes          | Yes              |
-    > | Edge    | -----------    | No           | N/A              |
-    > | Firefox | -----------    | No           | N/A              |
-    > | Opera   | -----------    | No           | N/A              |
-    > | Safari  | -----------    | No           | N/A              |
+    > | Browser | Version #      | Tested (y/n) | Date Tested | Working (y/n/na) |
+    > | ------- | -------------- | ------------ | ----------- | ---------------- |
+    > | Chrome  | 118.0.5993.118 | Yes          | 10/29/2023  | Yes              |
+    > | Edge    | -----------    | No           | N/A         | N/A              |
+    > | Firefox | -----------    | No           | N/A         | N/A              |
+    > | Opera   | -----------    | No           | N/A         | N/A              |
+    > | Safari  | -----------    | No           | N/A         | N/A              |
 
 ## v0.9.000 to-do list:
 
