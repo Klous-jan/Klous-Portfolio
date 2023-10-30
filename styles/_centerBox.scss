@@ -21,3 +21,63 @@
 		text-decoration: none;
 	}
 }
+
+@media only screen and (max-width: 1430px) {
+	#centerBox {
+		div {
+			header {
+				.nameArea {
+					font-size: 63px;
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 1400px) {
+	#centerBox {
+		width: $totalWidth;
+	}
+	#rightBox {
+		display: none !important;
+	}
+}
+
+@media only screen and (max-width: 925px) {
+	#centerBox {
+		div {
+			header {
+				.nameArea {
+					font-size: 40px;
+				}
+			}
+			.aboutArea {
+				font-size: 12px;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 660px) {
+	#centerBox {
+		div {
+			header {
+				.nameArea {
+					font-size: 28px;
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 525px) {
+	#centerBox {
+		div {
+			header {
+				.nameArea {
+					font-size: 25px;
+				}
+			}
+		}
+	}
+}

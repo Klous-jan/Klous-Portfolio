@@ -91,6 +91,37 @@
   text-decoration: none;
 }
 
+@media only screen and (max-width: 1430px) {
+  #centerBox div header .nameArea {
+    font-size: 63px;
+  }
+}
+@media only screen and (max-width: 1400px) {
+  #centerBox {
+    width: calc(100% - 17rem);
+  }
+  #rightBox {
+    display: none !important;
+  }
+}
+@media only screen and (max-width: 925px) {
+  #centerBox div header .nameArea {
+    font-size: 40px;
+  }
+  #centerBox div .aboutArea {
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 660px) {
+  #centerBox div header .nameArea {
+    font-size: 28px;
+  }
+}
+@media only screen and (max-width: 525px) {
+  #centerBox div header .nameArea {
+    font-size: 25px;
+  }
+}
 .leftBox {
   width: 17rem;
   background-color: #181818;
@@ -305,6 +336,37 @@
   text-decoration: none;
 }
 
+@media only screen and (max-width: 1430px) {
+  #centerBox div header .nameArea {
+    font-size: 63px;
+  }
+}
+@media only screen and (max-width: 1400px) {
+  #centerBox {
+    width: calc(100% - 17rem);
+  }
+  #rightBox {
+    display: none !important;
+  }
+}
+@media only screen and (max-width: 925px) {
+  #centerBox div header .nameArea {
+    font-size: 40px;
+  }
+  #centerBox div .aboutArea {
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 660px) {
+  #centerBox div header .nameArea {
+    font-size: 28px;
+  }
+}
+@media only screen and (max-width: 525px) {
+  #centerBox div header .nameArea {
+    font-size: 25px;
+  }
+}
 #rightBox {
   height: 100vh;
   width: calc((100% - 17rem) / 2);
