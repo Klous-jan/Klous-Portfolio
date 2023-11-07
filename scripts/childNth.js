@@ -15,7 +15,7 @@ function windowListen() {
 
 function windowSize() {
 	windowListen();
-	var unitSpan = 5;
+	var unitSpan = 2;
 	const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
 	const child = document.getElementById("child");
 	const img = document.getElementById("image");

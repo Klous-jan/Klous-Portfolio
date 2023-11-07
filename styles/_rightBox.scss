@@ -1,14 +1,15 @@
 @import "presets";
 #rightBox {
 	height: 100vh;
-	width: $rightWidthADJ;
+	width: $rightWidth;
 	right: 0;
 	// left: calc($leftWidth + $centerWidth);
 	display: inline-flex;
 	position: fixed;
 	top: 0;
 	@include flexCenter;
-	justify-content: left;
+	// justify-content: left;
+	// outline: 1px solid white;
 	.nameArea {
 		padding-left: 50px;
 		margin: 0;
@@ -34,19 +35,19 @@
 		@include flexCenter;
 		align-items: start;
 		// @include Font-Minor;
-		.icon {
-			background-color: $primeColor;
-			border-radius: 90%;
-			height: 10%;
-			aspect-ratio: 1/1;
-			@include flexCenter;
-			margin-bottom: 3rem;
-			svg {
-				height: 80%;
-				aspect-ratio: 1/1;
-				transform: rotate(-20deg);
-			}
-		}
+		// .icon {
+		// 	background-color: $primeColor;
+		// 	border-radius: 90%;
+		// 	height: 10%;
+		// 	aspect-ratio: 1/1;
+		// 	@include flexCenter;
+		// 	margin-bottom: 3rem;
+		// 	svg {
+		// 		height: 80%;
+		// 		aspect-ratio: 1/1;
+		// 		transform: rotate(-20deg);
+		// 	}
+		// }
 		.right-contact {
 			margin: 0;
 		}

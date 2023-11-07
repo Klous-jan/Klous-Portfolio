@@ -8,18 +8,6 @@
 
 .main_container {
 	font-family: $fontFamily;
-}
-
-.company h3 span:before {
-	content: " — ";
-	font-weight: normal;
-}
-
-.company h3 span {
-	font-weight: normal;
-}
-
-.main_container {
 	// border: 1px solid coral; // co.ral COntainer
 	height: 100vh;
 	width: calc(100vw - 17.5rem);
@@ -30,28 +18,110 @@
 	overflow: scroll;
 	overflow-x: hidden;
 	scrollbar-width: 1px;
-}
-
-.outer_container {
-	height: 100vh;
-	display: inline-flex;
-	position: relative;
-	width: 95%;
-	// width: calc(90% - $leftWidth);
-	top: 0;
-	margin-top: 6vh;
-	// outline: 1px solid orchid; // o.rchid - Outside container
-	// overflow: scroll;
-	// overflow-x: hidden;
-	// scrollbar-width: 1px;
-}
-
-.left_container {
-	display: block;
-	position: fixed;
-	width: 32rem;
-	height: 100vh;
-	margin-top: 55px;
+	.outer_container {
+		height: 100vh;
+		display: inline-flex;
+		position: relative;
+		width: 95%;
+		top: 0;
+		margin-top: 6vh;
+		.left_container {
+			display: block;
+			position: fixed;
+			width: 32rem;
+			height: 100vh;
+			margin-top: 55px;
+			.leftHeadInfo {
+				display: flex;
+				text-align: center;
+				position: relative;
+				width: 100%;
+				aspect-ratio: 1 / 0.6;
+				border-radius: 90% 90% 0 0;
+				background-color: $secondColor;
+				.headInfo-list {
+					display: block;
+					align-items: center;
+					text-align: left;
+					margin: 0;
+					margin-top: 25%;
+					margin-left: 10%;
+					padding: 0;
+					width: 100%;
+					aspect-ratio: 1 / 1;
+					list-style: none;
+					.headtitleList {
+						margin-bottom: -20px;
+					}
+				}
+			}
+			ul {
+				color: $fifthColor;
+			}
+			.leftHeadInfo::after {
+				display: inline-block;
+				position: absolute;
+				content: "";
+				width: 90%;
+				aspect-ratio: 1 / 0.6;
+				border: 4px solid $fifthColor;
+				border-radius: 90% 90% 0 0;
+				border-bottom: none;
+				left: 11.5%;
+				margin-top: 5%;
+				margin-left: -25px;
+				pointer-events: none;
+			}
+			.leftSkillsInfo {
+				display: flex;
+				text-align: center;
+				width: 100%;
+				height: 100%;
+				background-color: $secondColor;
+				.skill-headers {
+					display: block;
+					align-items: center;
+					text-align: left;
+					list-style: none;
+					margin: 0;
+					padding: 0;
+					margin-left: 10%;
+					width: 100%;
+					.titleList {
+						margin-bottom: 5px;
+					}
+					.skill-lists {
+						padding: 0;
+						margin-left: 8%;
+						list-style: square;
+						.firstInfo {
+							margin-top: 0;
+						}
+						.titleInfo {
+							margin-bottom: -20px;
+						}
+					}
+					.secondSkills {
+						margin-top: 15%;
+					}
+				}
+			}
+			.leftSkillsInfo::after {
+				display: inline-block;
+				position: absolute;
+				content: "";
+				width: 90%;
+				height: 100%;
+				aspect-ratio: 1 / 0.6;
+				border: 4px solid $fifthColor;
+				border-bottom: none;
+				border-top: none;
+				left: 11.5%;
+				margin-left: -25px;
+				pointer-events: none;
+			}
+		}
+	}
 }
 
 .rightContainer {
@@ -62,181 +132,89 @@
 	margin-top: 55px;
 	margin-left: calc(32rem + 6%);
 	margin-right: 6%;
-}
-
-.leftHeadInfo {
-	display: flex;
-	text-align: center;
-	position: relative;
-	width: 100%;
-	aspect-ratio: 1 / 0.6;
-	// border: 1px solid white;
-	// border: 1px solid white;
-	border-radius: 90% 90% 0 0;
-	background-color: $secondColor; // header rounded top
-}
-
-.leftHeadInfo::after {
-	display: inline-block;
-	position: absolute;
-	content: "";
-	width: 90%;
-	aspect-ratio: 1 / 0.6;
-	border: 4px solid $fifthColor;
-	border-radius: 90% 90% 0 0;
-	border-bottom: none;
-	left: 11.5%;
-	margin-top: 5%;
-	margin-left: -25px;
-}
-
-.leftSkillsInfo::after {
-	display: inline-block;
-	position: absolute;
-	content: "";
-	width: 90%;
-	height: 100%;
-	aspect-ratio: 1 / 0.6;
-	border: 4px solid $fifthColor;
-	border-bottom: none;
-	border-top: none;
-	left: 11.5%;
-	margin-left: -25px;
-}
-
-.headInfo-list {
-	display: block;
-	align-items: center;
-	text-align: left;
-	margin: 0;
-	margin-top: 25%;
-	margin-left: 10%;
-	padding: 0;
-	width: 100%;
-	aspect-ratio: 1 / 1;
-	// outline: 1px solid indigo; // in.digo - INside container
-	list-style: none;
-}
-
-.headtitleList {
-	margin-bottom: -20px;
-}
-
-.titleList {
-	margin-bottom: 5px;
-	// outline: 1px solid lightgreen; // li.ghtgreen LIst item
-}
-
-.leftSkillsInfo {
-	display: flex;
-	text-align: center;
-	width: 100%;
-	height: 100%;
-	// outline: 1px solid dimgray; // di.mgray - DIv
-	background-color: $secondColor; // Left bar column
-}
-
-.skill-headers {
-	display: block;
-	align-items: center;
-	text-align: left;
-	list-style: none;
-	margin: 0;
-	padding: 0;
-	margin-left: 10%;
-	width: 100%;
-	// outline: 1px solid indigo; // in.digo - INside container
-}
-
-.skill-lists {
-	padding: 0;
-	margin-left: 8%;
-	list-style: square;
-}
-
-.titleInfo {
-	margin-bottom: -20px;
-}
-
-.secondSkills {
-	margin-top: 15%;
-}
-
-.firstInfo {
-	margin-top: 0;
-}
-
-.left_container ul {
-	color: $fifthColor;
-}
-
-#name {
-	color: $primeColor;
-	font-size: 10rem;
-	margin-top: 7%;
-	line-height: 85px;
-	margin-bottom: 1rem;
-}
-
-.company header {
-	display: flex;
-	align-items: baseline;
-	// outline: 1px solid blue;
-}
-
-.period {
-	margin-left: auto;
-	margin-right: 2rem;
-}
-
-article p {
-	max-width: 70%;
-	color: $thirdColor;
-	font-size: 2.1rem;
-}
-
-article > header > h2 {
-	color: $fourthColor;
-	font-size: 3rem;
-}
-
-article h2,
-article h3 {
-	color: $fifthColor;
-	margin: 0;
-}
-
-span {
-	color: $thirdColor;
-	font-weight: normal;
-}
-
-article ul {
-	list-style: none;
-	padding: 0;
-}
-.points {
-	list-style: square;
-	padding-left: 40px;
-}
-
-#bot-li {
-	padding-bottom: 55px;
-}
-
-ul {
-	li {
-		hr {
-			opacity: 0.3;
-			margin-top: 0;
-			margin-bottom: 1em;
+	h2,
+	h3 {
+		color: $fifthColor;
+		margin: 0;
+	}
+	header {
+		#name {
+			color: $primeColor;
+			font-size: 10rem;
+			margin-top: 7%;
+			line-height: 85px;
+			margin-bottom: 1rem;
 		}
+		h2 {
+			color: $fourthColor;
+			font-size: 3rem;
+		}
+		p {
+			max-width: 70%;
+			color: $thirdColor;
+			font-size: 2.1rem;
+		}
+	}
+	section {
+		ul {
+			list-style: none;
+			padding: 0;
+		}
+		.skill-lists {
+			padding: 0;
+			margin-left: 8%;
+			list-style: square;
+			.titleInfo {
+				margin-bottom: -20px;
+			}
+			.firstInfo {
+				margin-top: 0;
+			}
+		}
+		#companies {
+			.company {
+				header {
+					display: flex;
+					align-items: baseline;
+					h3 {
+						span {
+							font-weight: normal;
+							color: $thirdColor;
+						}
+						span:before {
+							content: " — ";
+							font-weight: normal;
+						}
+					}
+					.period {
+						margin-left: auto;
+						margin-right: 2rem;
+					}
+				}
+				hr {
+					opacity: 0.3;
+					margin-top: 0;
+					margin-bottom: 1em;
+				}
+				.points {
+					list-style: square;
+					padding-left: 40px;
+				}
+			}
+		}
+	}
+	#bot-li {
+		padding-bottom: 55px;
 	}
 }
 
 @media only screen and (max-width: 1200px) {
-	.left_container {
-		display: none;
+	.main_container {
+		.outer_container {
+			.left_container {
+				display: none;
+			}
+		}
 	}
 	.rightContainer {
 		margin-left: 5rem;
@@ -244,51 +222,75 @@ ul {
 }
 
 @media only screen and (max-width: 1000px) {
-	#name {
-		color: $primeColor;
-		font-size: 8rem;
-		line-height: 70px;
+	.rightContainer {
+		header {
+			#name {
+				color: $primeColor;
+				font-size: 8rem;
+				line-height: 70px;
+			}
+		}
 	}
-	article > header > h2 {
-		color: $fourthColor;
-		font-size: 2.5rem;
-	}
-	article p {
-		max-width: 70%;
-		color: $thirdColor;
-		font-size: 1.8rem;
+	article {
+		header {
+			h2 {
+				color: $fourthColor;
+				font-size: 2.5rem;
+			}
+		}
+		p {
+			max-width: 70%;
+			color: $thirdColor;
+			font-size: 1.8rem;
+		}
 	}
 }
 @media only screen and (max-width: 900px) {
-	#name {
-		color: $primeColor;
-		font-size: 7rem;
-		line-height: 60px;
+	.rightContainer {
+		header {
+			#name {
+				color: $primeColor;
+				font-size: 7rem;
+				line-height: 60px;
+			}
+		}
 	}
-	article > header > h2 {
-		color: $fourthColor;
-		font-size: 2rem;
-	}
-	article p {
-		max-width: 70%;
-		color: $thirdColor;
-		font-size: 1.6rem;
+	article {
+		header {
+			h2 {
+				color: $fourthColor;
+				font-size: 2rem;
+			}
+		}
+		p {
+			max-width: 70%;
+			color: $thirdColor;
+			font-size: 1.6rem;
+		}
 	}
 }
 
 @media only screen and (max-width: 600px) {
-	#name {
-		color: $primeColor;
-		font-size: 5rem;
-		line-height: 45px;
+	.rightContainer {
+		header {
+			#name {
+				color: $primeColor;
+				font-size: 5rem;
+				line-height: 45px;
+			}
+		}
 	}
-	article > header > h2 {
-		color: $fourthColor;
-		font-size: 2rem;
-	}
-	article p {
-		max-width: 70%;
-		color: $thirdColor;
-		font-size: 1.6rem;
+	article {
+		header {
+			h2 {
+				color: $fourthColor;
+				font-size: 2rem;
+			}
+		}
+		p {
+			max-width: 70%;
+			color: $thirdColor;
+			font-size: 1.6rem;
+		}
 	}
 }

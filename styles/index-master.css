@@ -399,7 +399,7 @@
 }
 #rightBox {
   height: 100vh;
-  width: calc(100% - 17rem - (100% - 17rem) / 2 * 1.2);
+  width: calc((100% - 17rem) / 2);
   right: 0;
   display: inline-flex;
   position: fixed;
@@ -407,7 +407,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  justify-content: left;
 }
 #rightBox .nameArea {
   padding-left: 50px;
@@ -441,21 +440,6 @@
   justify-content: center;
   align-items: center;
   align-items: start;
-}
-#rightBox #contact-wrapper .icon {
-  background-color: rgb(189, 211, 175);
-  border-radius: 90%;
-  height: 10%;
-  aspect-ratio: 1/1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 3rem;
-}
-#rightBox #contact-wrapper .icon svg {
-  height: 80%;
-  aspect-ratio: 1/1;
-  transform: rotate(-20deg);
 }
 #rightBox #contact-wrapper .right-contact {
   margin: 0;
@@ -513,7 +497,6 @@ body {
   min-width: 320px;
   font-family: "Open Sans", sans-serif;
   color: #fff;
-  padding-left: 13rem;
   overflow-y: hidden;
   overflow-x: hidden;
 }

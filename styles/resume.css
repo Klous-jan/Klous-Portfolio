@@ -5,18 +5,6 @@
 
 .main_container {
   font-family: "SF UI Text", "Helvetica Neue", "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Open Sans", sans-serif;
-}
-
-.company h3 span:before {
-  content: " — ";
-  font-weight: normal;
-}
-
-.company h3 span {
-  font-weight: normal;
-}
-
-.main_container {
   height: 100vh;
   width: calc(100vw - 17.5rem);
   left: 17rem;
@@ -27,8 +15,7 @@
   overflow-x: hidden;
   scrollbar-width: 1px;
 }
-
-.outer_container {
+.main_container .outer_container {
   height: 100vh;
   display: inline-flex;
   position: relative;
@@ -36,26 +23,14 @@
   top: 0;
   margin-top: 6vh;
 }
-
-.left_container {
+.main_container .outer_container .left_container {
   display: block;
   position: fixed;
   width: 32rem;
   height: 100vh;
   margin-top: 55px;
 }
-
-.rightContainer {
-  display: block;
-  position: relative;
-  width: 80%;
-  height: 100%;
-  margin-top: 55px;
-  margin-left: calc(32rem + 6%);
-  margin-right: 6%;
-}
-
-.leftHeadInfo {
+.main_container .outer_container .left_container .leftHeadInfo {
   display: flex;
   text-align: center;
   position: relative;
@@ -64,36 +39,7 @@
   border-radius: 90% 90% 0 0;
   background-color: rgb(0, 0, 230);
 }
-
-.leftHeadInfo::after {
-  display: inline-block;
-  position: absolute;
-  content: "";
-  width: 90%;
-  aspect-ratio: 1/0.6;
-  border: 4px solid rgb(212, 175, 165);
-  border-radius: 90% 90% 0 0;
-  border-bottom: none;
-  left: 11.5%;
-  margin-top: 5%;
-  margin-left: -25px;
-}
-
-.leftSkillsInfo::after {
-  display: inline-block;
-  position: absolute;
-  content: "";
-  width: 90%;
-  height: 100%;
-  aspect-ratio: 1/0.6;
-  border: 4px solid rgb(212, 175, 165);
-  border-bottom: none;
-  border-top: none;
-  left: 11.5%;
-  margin-left: -25px;
-}
-
-.headInfo-list {
+.main_container .outer_container .left_container .leftHeadInfo .headInfo-list {
   display: block;
   align-items: center;
   text-align: left;
@@ -105,24 +51,34 @@
   aspect-ratio: 1/1;
   list-style: none;
 }
-
-.headtitleList {
+.main_container .outer_container .left_container .leftHeadInfo .headInfo-list .headtitleList {
   margin-bottom: -20px;
 }
-
-.titleList {
-  margin-bottom: 5px;
+.main_container .outer_container .left_container ul {
+  color: rgb(212, 175, 165);
 }
-
-.leftSkillsInfo {
+.main_container .outer_container .left_container .leftHeadInfo::after {
+  display: inline-block;
+  position: absolute;
+  content: "";
+  width: 90%;
+  aspect-ratio: 1/0.6;
+  border: 4px solid rgb(212, 175, 165);
+  border-radius: 90% 90% 0 0;
+  border-bottom: none;
+  left: 11.5%;
+  margin-top: 5%;
+  margin-left: -25px;
+  pointer-events: none;
+}
+.main_container .outer_container .left_container .leftSkillsInfo {
   display: flex;
   text-align: center;
   width: 100%;
   height: 100%;
   background-color: rgb(0, 0, 230);
 }
-
-.skill-headers {
+.main_container .outer_container .left_container .leftSkillsInfo .skill-headers {
   display: block;
   align-items: center;
   text-align: left;
@@ -132,91 +88,114 @@
   margin-left: 10%;
   width: 100%;
 }
-
-.skill-lists {
+.main_container .outer_container .left_container .leftSkillsInfo .skill-headers .titleList {
+  margin-bottom: 5px;
+}
+.main_container .outer_container .left_container .leftSkillsInfo .skill-headers .skill-lists {
   padding: 0;
   margin-left: 8%;
   list-style: square;
 }
-
-.titleInfo {
-  margin-bottom: -20px;
-}
-
-.secondSkills {
-  margin-top: 15%;
-}
-
-.firstInfo {
+.main_container .outer_container .left_container .leftSkillsInfo .skill-headers .skill-lists .firstInfo {
   margin-top: 0;
 }
-
-.left_container ul {
-  color: rgb(212, 175, 165);
+.main_container .outer_container .left_container .leftSkillsInfo .skill-headers .skill-lists .titleInfo {
+  margin-bottom: -20px;
+}
+.main_container .outer_container .left_container .leftSkillsInfo .skill-headers .secondSkills {
+  margin-top: 15%;
+}
+.main_container .outer_container .left_container .leftSkillsInfo::after {
+  display: inline-block;
+  position: absolute;
+  content: "";
+  width: 90%;
+  height: 100%;
+  aspect-ratio: 1/0.6;
+  border: 4px solid rgb(212, 175, 165);
+  border-bottom: none;
+  border-top: none;
+  left: 11.5%;
+  margin-left: -25px;
+  pointer-events: none;
 }
 
-#name {
+.rightContainer {
+  display: block;
+  position: relative;
+  width: 80%;
+  height: 100%;
+  margin-top: 55px;
+  margin-left: calc(32rem + 6%);
+  margin-right: 6%;
+}
+.rightContainer h2,
+.rightContainer h3 {
+  color: rgb(212, 175, 165);
+  margin: 0;
+}
+.rightContainer header #name {
   color: rgb(189, 211, 175);
   font-size: 10rem;
   margin-top: 7%;
   line-height: 85px;
   margin-bottom: 1rem;
 }
-
-.company header {
-  display: flex;
-  align-items: baseline;
+.rightContainer header h2 {
+  color: rgb(135, 106, 99);
+  font-size: 3rem;
 }
-
-.period {
-  margin-left: auto;
-  margin-right: 2rem;
-}
-
-article p {
+.rightContainer header p {
   max-width: 70%;
   color: aliceblue;
   font-size: 2.1rem;
 }
-
-article > header > h2 {
-  color: rgb(135, 106, 99);
-  font-size: 3rem;
-}
-
-article h2,
-article h3 {
-  color: rgb(212, 175, 165);
-  margin: 0;
-}
-
-span {
-  color: aliceblue;
-  font-weight: normal;
-}
-
-article ul {
+.rightContainer section ul {
   list-style: none;
   padding: 0;
 }
-
-.points {
+.rightContainer section .skill-lists {
+  padding: 0;
+  margin-left: 8%;
   list-style: square;
-  padding-left: 40px;
 }
-
-#bot-li {
-  padding-bottom: 55px;
+.rightContainer section .skill-lists .titleInfo {
+  margin-bottom: -20px;
 }
-
-ul li hr {
+.rightContainer section .skill-lists .firstInfo {
+  margin-top: 0;
+}
+.rightContainer section #companies .company header {
+  display: flex;
+  align-items: baseline;
+}
+.rightContainer section #companies .company header h3 span {
+  font-weight: normal;
+  color: aliceblue;
+}
+.rightContainer section #companies .company header h3 span:before {
+  content: " — ";
+  font-weight: normal;
+}
+.rightContainer section #companies .company header .period {
+  margin-left: auto;
+  margin-right: 2rem;
+}
+.rightContainer section #companies .company hr {
   opacity: 0.3;
   margin-top: 0;
   margin-bottom: 1em;
 }
+.rightContainer section #companies .company .points {
+  list-style: square;
+  padding-left: 40px;
+}
+.rightContainer #bot-li {
+  padding-bottom: 55px;
+}
 
 @media only screen and (max-width: 1200px) {
-  .left_container {
+  .main_container .outer_container .left_container {
     display: none;
   }
   .rightContainer {
@@ -224,12 +203,12 @@ ul li hr {
   }
 }
 @media only screen and (max-width: 1000px) {
-  #name {
+  .rightContainer header #name {
     color: rgb(189, 211, 175);
     font-size: 8rem;
     line-height: 70px;
   }
-  article > header > h2 {
+  article header h2 {
     color: rgb(135, 106, 99);
     font-size: 2.5rem;
   }
@@ -240,12 +219,12 @@ ul li hr {
   }
 }
 @media only screen and (max-width: 900px) {
-  #name {
+  .rightContainer header #name {
     color: rgb(189, 211, 175);
     font-size: 7rem;
     line-height: 60px;
   }
-  article > header > h2 {
+  article header h2 {
     color: rgb(135, 106, 99);
     font-size: 2rem;
   }
@@ -256,12 +235,12 @@ ul li hr {
   }
 }
 @media only screen and (max-width: 600px) {
-  #name {
+  .rightContainer header #name {
     color: rgb(189, 211, 175);
     font-size: 5rem;
     line-height: 45px;
   }
-  article > header > h2 {
+  article header h2 {
     color: rgb(135, 106, 99);
     font-size: 2rem;
   }
