@@ -231,11 +231,14 @@
 .leftBox ul li svg {
   width: 2rem;
 }
-.leftBox ul li svg.SVGgithub {
-  width: 1rem;
+.leftBox ul li svg.githubSVG {
+  width: 2rem;
 }
-.leftBox ul li svg.SVGlinkedin {
-  width: 1rem;
+.leftBox ul li svg.linkedinSVG {
+  width: 2rem;
+}
+.leftBox ul li svg.dlSVG {
+  width: 2.5rem;
 }
 .leftBox ul li svg path {
   transition: fill 0.3s;
