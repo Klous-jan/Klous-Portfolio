@@ -10,7 +10,7 @@ Welcome to my portfolio website which is currently still in development. Below I
     > | Browser | Version #      | Tested (y/n) | Date Tested | Working (y/n/na) |
     > | ------- | -------------- | ------------ | ----------- | ---------------- |
     > | Chrome  | 118.0.5993.118 | Yes          | 10/29/2023  | Yes              |
-    > | Edge    | -----------    | No           | N/A         | N/A              |
+    > | Edge    | 119.0.2151.58  | Yes          | 11/14/2023  | Yes              |
     > | Firefox | 119.0          | Yes          | 10/29/2023  | Yes              |
     > | Opera   | -----------    | No           | N/A         | N/A              |
     > | Safari  | -----------    | No           | N/A         | N/A              |
