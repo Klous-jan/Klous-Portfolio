@@ -1,0 +1,31 @@
+@import "presets";
+
+#mobile {
+	#mobile-construction {
+		header {
+			#construction-headline {
+				display: flex;
+				justify-content: center;
+				text-align: center;
+				margin: 0;
+				margin-top: 40%;
+				color: $primeColor;
+				@include Font-Major;
+				font-size: 40px;
+				padding-left: 20px;
+				padding-right: 20px;
+			}
+		}
+		.aboutArea {
+			display: flex;
+			justify-content: center;
+			text-align: center;
+			margin-top: 50px;
+			color: $thirdColor;
+			@include Font-Major;
+			font-size: 30px;
+			padding-left: 20px;
+			padding-right: 20px;
+		}
+	}
+}

@@ -92,6 +92,7 @@
 }
 #centerBox .aboutArea {
   padding-left: 80px;
+  padding-right: 80px;
   color: aliceblue;
   font-size: 15px;
   font-family: "Montserrat", sans-serif;
@@ -355,6 +356,7 @@
 }
 #centerBox .aboutArea {
   padding-left: 80px;
+  padding-right: 80px;
   color: aliceblue;
   font-size: 15px;
   font-family: "Montserrat", sans-serif;
@@ -479,6 +481,46 @@
   margin: 0;
 }
 
+#mobile #mobile-construction header #construction-headline {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 0;
+  margin-top: 40%;
+  color: rgb(189, 211, 175);
+  font-size: 65px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+#mobile #mobile-construction .aboutArea {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 50px;
+  color: aliceblue;
+  font-size: 65px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  #desktop {
+    display: none;
+  }
+  #mobile {
+    display: block;
+  }
+}
 html {
   overflow-y: hidden; /* Hide vertical scrollbar */
   overflow-x: hidden; /* Hide horizontal scrollbar */
